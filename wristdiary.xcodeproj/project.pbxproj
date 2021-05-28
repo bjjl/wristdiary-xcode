@@ -1,0 +1,554 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		81B59DC826612C2A00B17717 /* wristdiary WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 81B59DC726612C2A00B17717 /* wristdiary WatchKit App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		81B59DCD26612C2D00B17717 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 81B59DCC26612C2D00B17717 /* Assets.xcassets */; };
+		81B59DD426612C2D00B17717 /* wristdiary WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 81B59DD326612C2D00B17717 /* wristdiary WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		81B59DD926612C2D00B17717 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81B59DD826612C2D00B17717 /* ContentView.swift */; };
+		81B59DDB26612C2D00B17717 /* wristdiaryApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81B59DDA26612C2D00B17717 /* wristdiaryApp.swift */; };
+		81B59DDD26612C2D00B17717 /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81B59DDC26612C2D00B17717 /* ComplicationController.swift */; };
+		81B59DDF26612C2E00B17717 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 81B59DDE26612C2E00B17717 /* Assets.xcassets */; };
+		81B59DE226612C2E00B17717 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 81B59DE126612C2E00B17717 /* Preview Assets.xcassets */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		81B59DC926612C2A00B17717 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 81B59DBD26612C2900B17717 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 81B59DC626612C2A00B17717;
+			remoteInfo = "wristdiary WatchKit App";
+		};
+		81B59DD526612C2D00B17717 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 81B59DBD26612C2900B17717 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 81B59DD226612C2D00B17717;
+			remoteInfo = "wristdiary WatchKit Extension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		81B59DE926612C2E00B17717 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				81B59DD426612C2D00B17717 /* wristdiary WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		81B59DED26612C2E00B17717 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				81B59DC826612C2A00B17717 /* wristdiary WatchKit App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		81B59DC326612C2A00B17717 /* wristdiary.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = wristdiary.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		81B59DC726612C2A00B17717 /* wristdiary WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "wristdiary WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		81B59DCC26612C2D00B17717 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		81B59DCE26612C2D00B17717 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		81B59DD326612C2D00B17717 /* wristdiary WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "wristdiary WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		81B59DD826612C2D00B17717 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		81B59DDA26612C2D00B17717 /* wristdiaryApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = wristdiaryApp.swift; sourceTree = "<group>"; };
+		81B59DDC26612C2D00B17717 /* ComplicationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComplicationController.swift; sourceTree = "<group>"; };
+		81B59DDE26612C2E00B17717 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		81B59DE126612C2E00B17717 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		81B59DE326612C2E00B17717 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		81B59DD026612C2D00B17717 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		81B59DBC26612C2900B17717 = {
+			isa = PBXGroup;
+			children = (
+				81B59DCB26612C2A00B17717 /* wristdiary WatchKit App */,
+				81B59DD726612C2D00B17717 /* wristdiary WatchKit Extension */,
+				81B59DC426612C2A00B17717 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		81B59DC426612C2A00B17717 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				81B59DC326612C2A00B17717 /* wristdiary.app */,
+				81B59DC726612C2A00B17717 /* wristdiary WatchKit App.app */,
+				81B59DD326612C2D00B17717 /* wristdiary WatchKit Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		81B59DCB26612C2A00B17717 /* wristdiary WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				81B59DCC26612C2D00B17717 /* Assets.xcassets */,
+				81B59DCE26612C2D00B17717 /* Info.plist */,
+			);
+			path = "wristdiary WatchKit App";
+			sourceTree = "<group>";
+		};
+		81B59DD726612C2D00B17717 /* wristdiary WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				81B59DD826612C2D00B17717 /* ContentView.swift */,
+				81B59DDA26612C2D00B17717 /* wristdiaryApp.swift */,
+				81B59DDC26612C2D00B17717 /* ComplicationController.swift */,
+				81B59DDE26612C2E00B17717 /* Assets.xcassets */,
+				81B59DE326612C2E00B17717 /* Info.plist */,
+				81B59DE026612C2E00B17717 /* Preview Content */,
+			);
+			path = "wristdiary WatchKit Extension";
+			sourceTree = "<group>";
+		};
+		81B59DE026612C2E00B17717 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				81B59DE126612C2E00B17717 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		81B59DC226612C2900B17717 /* wristdiary */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 81B59DEE26612C2E00B17717 /* Build configuration list for PBXNativeTarget "wristdiary" */;
+			buildPhases = (
+				81B59DC126612C2900B17717 /* Resources */,
+				81B59DED26612C2E00B17717 /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				81B59DCA26612C2A00B17717 /* PBXTargetDependency */,
+			);
+			name = wristdiary;
+			productName = wristdiary;
+			productReference = 81B59DC326612C2A00B17717 /* wristdiary.app */;
+			productType = "com.apple.product-type.application.watchapp2-container";
+		};
+		81B59DC626612C2A00B17717 /* wristdiary WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 81B59DEA26612C2E00B17717 /* Build configuration list for PBXNativeTarget "wristdiary WatchKit App" */;
+			buildPhases = (
+				81B59DC526612C2A00B17717 /* Resources */,
+				81B59DE926612C2E00B17717 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				81B59DD626612C2D00B17717 /* PBXTargetDependency */,
+			);
+			name = "wristdiary WatchKit App";
+			productName = "wristdiary WatchKit App";
+			productReference = 81B59DC726612C2A00B17717 /* wristdiary WatchKit App.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		81B59DD226612C2D00B17717 /* wristdiary WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 81B59DE626612C2E00B17717 /* Build configuration list for PBXNativeTarget "wristdiary WatchKit Extension" */;
+			buildPhases = (
+				81B59DCF26612C2D00B17717 /* Sources */,
+				81B59DD026612C2D00B17717 /* Frameworks */,
+				81B59DD126612C2D00B17717 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "wristdiary WatchKit Extension";
+			productName = "wristdiary WatchKit Extension";
+			productReference = 81B59DD326612C2D00B17717 /* wristdiary WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		81B59DBD26612C2900B17717 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1250;
+				LastUpgradeCheck = 1250;
+				TargetAttributes = {
+					81B59DC226612C2900B17717 = {
+						CreatedOnToolsVersion = 12.5;
+					};
+					81B59DC626612C2A00B17717 = {
+						CreatedOnToolsVersion = 12.5;
+					};
+					81B59DD226612C2D00B17717 = {
+						CreatedOnToolsVersion = 12.5;
+					};
+				};
+			};
+			buildConfigurationList = 81B59DC026612C2900B17717 /* Build configuration list for PBXProject "wristdiary" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 81B59DBC26612C2900B17717;
+			productRefGroup = 81B59DC426612C2A00B17717 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				81B59DC226612C2900B17717 /* wristdiary */,
+				81B59DC626612C2A00B17717 /* wristdiary WatchKit App */,
+				81B59DD226612C2D00B17717 /* wristdiary WatchKit Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		81B59DC126612C2900B17717 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		81B59DC526612C2A00B17717 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				81B59DCD26612C2D00B17717 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		81B59DD126612C2D00B17717 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				81B59DE226612C2E00B17717 /* Preview Assets.xcassets in Resources */,
+				81B59DDF26612C2E00B17717 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		81B59DCF26612C2D00B17717 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				81B59DD926612C2D00B17717 /* ContentView.swift in Sources */,
+				81B59DDB26612C2D00B17717 /* wristdiaryApp.swift in Sources */,
+				81B59DDD26612C2D00B17717 /* ComplicationController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		81B59DCA26612C2A00B17717 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 81B59DC626612C2A00B17717 /* wristdiary WatchKit App */;
+			targetProxy = 81B59DC926612C2A00B17717 /* PBXContainerItemProxy */;
+		};
+		81B59DD626612C2D00B17717 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 81B59DD226612C2D00B17717 /* wristdiary WatchKit Extension */;
+			targetProxy = 81B59DD526612C2D00B17717 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		81B59DE426612C2E00B17717 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		81B59DE526612C2E00B17717 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		81B59DE726612C2E00B17717 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"wristdiary WatchKit Extension/Preview Content\"";
+				DEVELOPMENT_TEAM = K9LSAPMDRX;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "wristdiary WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.pocketservices.wristdiary.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 7.4;
+			};
+			name = Debug;
+		};
+		81B59DE826612C2E00B17717 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"wristdiary WatchKit Extension/Preview Content\"";
+				DEVELOPMENT_TEAM = K9LSAPMDRX;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "wristdiary WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.pocketservices.wristdiary.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 7.4;
+			};
+			name = Release;
+		};
+		81B59DEB26612C2E00B17717 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = K9LSAPMDRX;
+				IBSC_MODULE = wristdiary_WatchKit_Extension;
+				INFOPLIST_FILE = "wristdiary WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = com.pocketservices.wristdiary.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 7.4;
+			};
+			name = Debug;
+		};
+		81B59DEC26612C2E00B17717 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = K9LSAPMDRX;
+				IBSC_MODULE = wristdiary_WatchKit_Extension;
+				INFOPLIST_FILE = "wristdiary WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = com.pocketservices.wristdiary.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 7.4;
+			};
+			name = Release;
+		};
+		81B59DEF26612C2E00B17717 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = K9LSAPMDRX;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.pocketservices.wristdiary;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		81B59DF026612C2E00B17717 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = K9LSAPMDRX;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.pocketservices.wristdiary;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		81B59DC026612C2900B17717 /* Build configuration list for PBXProject "wristdiary" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				81B59DE426612C2E00B17717 /* Debug */,
+				81B59DE526612C2E00B17717 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		81B59DE626612C2E00B17717 /* Build configuration list for PBXNativeTarget "wristdiary WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				81B59DE726612C2E00B17717 /* Debug */,
+				81B59DE826612C2E00B17717 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		81B59DEA26612C2E00B17717 /* Build configuration list for PBXNativeTarget "wristdiary WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				81B59DEB26612C2E00B17717 /* Debug */,
+				81B59DEC26612C2E00B17717 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		81B59DEE26612C2E00B17717 /* Build configuration list for PBXNativeTarget "wristdiary" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				81B59DEF26612C2E00B17717 /* Debug */,
+				81B59DF026612C2E00B17717 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 81B59DBD26612C2900B17717 /* Project object */;
+}

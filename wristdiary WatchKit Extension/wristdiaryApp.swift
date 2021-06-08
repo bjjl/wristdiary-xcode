@@ -9,7 +9,8 @@ import SwiftUI
 
 @main
 struct wristdiaryApp: App {
-    var body: some Scene {
+    @Environment(\.scenePhase) private var scenePhase
+    @SceneBuilder var body: some Scene {
         WindowGroup {
             NavigationView {
                 ContentView()

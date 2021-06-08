@@ -3,10 +3,18 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		810857622662792C000FCF88 /* DataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 810857612662792C000FCF88 /* DataController.swift */; };
+		8180DB092664302A008D39E6 /* KeyStoreError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8180DB042664302A008D39E6 /* KeyStoreError.swift */; };
+		8180DB0A2664302A008D39E6 /* GenericPasswordStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8180DB052664302A008D39E6 /* GenericPasswordStore.swift */; };
+		8180DB0B2664302A008D39E6 /* GenericPasswordConvertible.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8180DB062664302A008D39E6 /* GenericPasswordConvertible.swift */; };
+		8180DB0C2664302A008D39E6 /* SecKeyConvertible.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8180DB072664302A008D39E6 /* SecKeyConvertible.swift */; };
+		8180DB0D2664302A008D39E6 /* SecKeyStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8180DB082664302A008D39E6 /* SecKeyStore.swift */; };
+		81A5C039266286FE0011BD9C /* SwiftDate in Frameworks */ = {isa = PBXBuildFile; productRef = 81A5C038266286FE0011BD9C /* SwiftDate */; };
+		81B45005266512B900EB8A08 /* EFQRCode in Frameworks */ = {isa = PBXBuildFile; productRef = 81B45004266512B900EB8A08 /* EFQRCode */; };
 		81B59DC826612C2A00B17717 /* wristdiary WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 81B59DC726612C2A00B17717 /* wristdiary WatchKit App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		81B59DCD26612C2D00B17717 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 81B59DCC26612C2D00B17717 /* Assets.xcassets */; };
 		81B59DD426612C2D00B17717 /* wristdiary WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 81B59DD326612C2D00B17717 /* wristdiary WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
@@ -15,6 +23,12 @@
 		81B59DDD26612C2D00B17717 /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81B59DDC26612C2D00B17717 /* ComplicationController.swift */; };
 		81B59DDF26612C2E00B17717 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 81B59DDE26612C2E00B17717 /* Assets.xcassets */; };
 		81B59DE226612C2E00B17717 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 81B59DE126612C2E00B17717 /* Preview Assets.xcassets */; };
+		81B59DF32661319700B17717 /* Crypt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81B59DF22661319700B17717 /* Crypt.swift */; };
+		81B59DF62661326D00B17717 /* Communicate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81B59DF52661326D00B17717 /* Communicate.swift */; };
+		81B59DF8266132E400B17717 /* StatusData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81B59DF7266132E400B17717 /* StatusData.swift */; };
+		81B59E0026613FE200B17717 /* ListEntriesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81B59DFF26613FE200B17717 /* ListEntriesView.swift */; };
+		81B59E022662457000B17717 /* EntryData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81B59E012662457000B17717 /* EntryData.swift */; };
+		81C3E41926643EB0005A3DFA /* QRCodeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81C3E41826643EB0005A3DFA /* QRCodeView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,6 +74,12 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		810857612662792C000FCF88 /* DataController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataController.swift; sourceTree = "<group>"; };
+		8180DB042664302A008D39E6 /* KeyStoreError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeyStoreError.swift; sourceTree = "<group>"; };
+		8180DB052664302A008D39E6 /* GenericPasswordStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GenericPasswordStore.swift; sourceTree = "<group>"; };
+		8180DB062664302A008D39E6 /* GenericPasswordConvertible.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GenericPasswordConvertible.swift; sourceTree = "<group>"; };
+		8180DB072664302A008D39E6 /* SecKeyConvertible.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SecKeyConvertible.swift; sourceTree = "<group>"; };
+		8180DB082664302A008D39E6 /* SecKeyStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SecKeyStore.swift; sourceTree = "<group>"; };
 		81B59DC326612C2A00B17717 /* wristdiary.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = wristdiary.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		81B59DC726612C2A00B17717 /* wristdiary WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "wristdiary WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		81B59DCC26612C2D00B17717 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -71,6 +91,12 @@
 		81B59DDE26612C2E00B17717 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		81B59DE126612C2E00B17717 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		81B59DE326612C2E00B17717 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		81B59DF22661319700B17717 /* Crypt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Crypt.swift; sourceTree = "<group>"; };
+		81B59DF52661326D00B17717 /* Communicate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Communicate.swift; sourceTree = "<group>"; };
+		81B59DF7266132E400B17717 /* StatusData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatusData.swift; sourceTree = "<group>"; };
+		81B59DFF26613FE200B17717 /* ListEntriesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListEntriesView.swift; sourceTree = "<group>"; };
+		81B59E012662457000B17717 /* EntryData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntryData.swift; sourceTree = "<group>"; };
+		81C3E41826643EB0005A3DFA /* QRCodeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRCodeView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,18 +104,50 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				81A5C039266286FE0011BD9C /* SwiftDate in Frameworks */,
+				81B45005266512B900EB8A08 /* EFQRCode in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8108576526627FC0000FCF88 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		8180DB032664302A008D39E6 /* Storage */ = {
+			isa = PBXGroup;
+			children = (
+				8180DB042664302A008D39E6 /* KeyStoreError.swift */,
+				8180DB052664302A008D39E6 /* GenericPasswordStore.swift */,
+				8180DB062664302A008D39E6 /* GenericPasswordConvertible.swift */,
+				8180DB072664302A008D39E6 /* SecKeyConvertible.swift */,
+				8180DB082664302A008D39E6 /* SecKeyStore.swift */,
+			);
+			path = Storage;
+			sourceTree = "<group>";
+		};
+		81A5C03A266386900011BD9C /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				81B59DD826612C2D00B17717 /* ContentView.swift */,
+				81B59DFF26613FE200B17717 /* ListEntriesView.swift */,
+				81C3E41826643EB0005A3DFA /* QRCodeView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		81B59DBC26612C2900B17717 = {
 			isa = PBXGroup;
 			children = (
 				81B59DCB26612C2A00B17717 /* wristdiary WatchKit App */,
 				81B59DD726612C2D00B17717 /* wristdiary WatchKit Extension */,
 				81B59DC426612C2A00B17717 /* Products */,
+				8108576526627FC0000FCF88 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -115,9 +173,13 @@
 		81B59DD726612C2D00B17717 /* wristdiary WatchKit Extension */ = {
 			isa = PBXGroup;
 			children = (
-				81B59DD826612C2D00B17717 /* ContentView.swift */,
-				81B59DDA26612C2D00B17717 /* wristdiaryApp.swift */,
+				8180DB032664302A008D39E6 /* Storage */,
+				81A5C03A266386900011BD9C /* Views */,
+				81B59DF42661324C00B17717 /* Net */,
+				81B59DF12661316800B17717 /* Library */,
 				81B59DDC26612C2D00B17717 /* ComplicationController.swift */,
+				810857612662792C000FCF88 /* DataController.swift */,
+				81B59DDA26612C2D00B17717 /* wristdiaryApp.swift */,
 				81B59DDE26612C2E00B17717 /* Assets.xcassets */,
 				81B59DE326612C2E00B17717 /* Info.plist */,
 				81B59DE026612C2E00B17717 /* Preview Content */,
@@ -131,6 +193,24 @@
 				81B59DE126612C2E00B17717 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		81B59DF12661316800B17717 /* Library */ = {
+			isa = PBXGroup;
+			children = (
+				81B59DF22661319700B17717 /* Crypt.swift */,
+			);
+			path = Library;
+			sourceTree = "<group>";
+		};
+		81B59DF42661324C00B17717 /* Net */ = {
+			isa = PBXGroup;
+			children = (
+				81B59DF52661326D00B17717 /* Communicate.swift */,
+				81B59DF7266132E400B17717 /* StatusData.swift */,
+				81B59E012662457000B17717 /* EntryData.swift */,
+			);
+			path = Net;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -149,6 +229,10 @@
 				81B59DCA26612C2A00B17717 /* PBXTargetDependency */,
 			);
 			name = wristdiary;
+			packageProductDependencies = (
+				81E28E9A2662867800CA3BD1 /* SwiftDate */,
+				81B45003266512AD00EB8A08 /* EFQRCode */,
+			);
 			productName = wristdiary;
 			productReference = 81B59DC326612C2A00B17717 /* wristdiary.app */;
 			productType = "com.apple.product-type.application.watchapp2-container";
@@ -183,6 +267,10 @@
 			dependencies = (
 			);
 			name = "wristdiary WatchKit Extension";
+			packageProductDependencies = (
+				81A5C038266286FE0011BD9C /* SwiftDate */,
+				81B45004266512B900EB8A08 /* EFQRCode */,
+			);
 			productName = "wristdiary WatchKit Extension";
 			productReference = 81B59DD326612C2D00B17717 /* wristdiary WatchKit Extension.appex */;
 			productType = "com.apple.product-type.watchkit2-extension";
@@ -216,6 +304,10 @@
 				Base,
 			);
 			mainGroup = 81B59DBC26612C2900B17717;
+			packageReferences = (
+				81E28E992662867800CA3BD1 /* XCRemoteSwiftPackageReference "SwiftDate" */,
+				81B45002266512AD00EB8A08 /* XCRemoteSwiftPackageReference "EFQRCode" */,
+			);
 			productRefGroup = 81B59DC426612C2A00B17717 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -259,9 +351,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				81B59DF32661319700B17717 /* Crypt.swift in Sources */,
+				81B59E0026613FE200B17717 /* ListEntriesView.swift in Sources */,
 				81B59DD926612C2D00B17717 /* ContentView.swift in Sources */,
+				8180DB0B2664302A008D39E6 /* GenericPasswordConvertible.swift in Sources */,
+				81C3E41926643EB0005A3DFA /* QRCodeView.swift in Sources */,
 				81B59DDB26612C2D00B17717 /* wristdiaryApp.swift in Sources */,
+				81B59DF62661326D00B17717 /* Communicate.swift in Sources */,
+				810857622662792C000FCF88 /* DataController.swift in Sources */,
 				81B59DDD26612C2D00B17717 /* ComplicationController.swift in Sources */,
+				81B59E022662457000B17717 /* EntryData.swift in Sources */,
+				8180DB092664302A008D39E6 /* KeyStoreError.swift in Sources */,
+				8180DB0A2664302A008D39E6 /* GenericPasswordStore.swift in Sources */,
+				81B59DF8266132E400B17717 /* StatusData.swift in Sources */,
+				8180DB0D2664302A008D39E6 /* SecKeyStore.swift in Sources */,
+				8180DB0C2664302A008D39E6 /* SecKeyConvertible.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -549,6 +653,48 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		81B45002266512AD00EB8A08 /* XCRemoteSwiftPackageReference "EFQRCode" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/EFPrefix/EFQRCode.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 6.1.0;
+			};
+		};
+		81E28E992662867800CA3BD1 /* XCRemoteSwiftPackageReference "SwiftDate" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/malcommac/SwiftDate.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 6.3.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		81A5C038266286FE0011BD9C /* SwiftDate */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 81E28E992662867800CA3BD1 /* XCRemoteSwiftPackageReference "SwiftDate" */;
+			productName = SwiftDate;
+		};
+		81B45003266512AD00EB8A08 /* EFQRCode */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 81B45002266512AD00EB8A08 /* XCRemoteSwiftPackageReference "EFQRCode" */;
+			productName = EFQRCode;
+		};
+		81B45004266512B900EB8A08 /* EFQRCode */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 81B45002266512AD00EB8A08 /* XCRemoteSwiftPackageReference "EFQRCode" */;
+			productName = EFQRCode;
+		};
+		81E28E9A2662867800CA3BD1 /* SwiftDate */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 81E28E992662867800CA3BD1 /* XCRemoteSwiftPackageReference "SwiftDate" */;
+			productName = SwiftDate;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 81B59DBD26612C2900B17717 /* Project object */;
 }

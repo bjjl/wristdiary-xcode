@@ -6,7 +6,6 @@
 //
 
 import SwiftUI
-import SwiftDate
 
 struct ListEntriesView: View {
     @ObservedObject var data = DataController.shared

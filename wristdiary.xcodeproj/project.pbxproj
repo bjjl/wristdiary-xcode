@@ -13,7 +13,6 @@
 		8180DB0B2664302A008D39E6 /* GenericPasswordConvertible.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8180DB062664302A008D39E6 /* GenericPasswordConvertible.swift */; };
 		8180DB0C2664302A008D39E6 /* SecKeyConvertible.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8180DB072664302A008D39E6 /* SecKeyConvertible.swift */; };
 		8180DB0D2664302A008D39E6 /* SecKeyStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8180DB082664302A008D39E6 /* SecKeyStore.swift */; };
-		81A5C039266286FE0011BD9C /* SwiftDate in Frameworks */ = {isa = PBXBuildFile; productRef = 81A5C038266286FE0011BD9C /* SwiftDate */; };
 		81B45005266512B900EB8A08 /* EFQRCode in Frameworks */ = {isa = PBXBuildFile; productRef = 81B45004266512B900EB8A08 /* EFQRCode */; };
 		81B59DC826612C2A00B17717 /* wristdiary WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 81B59DC726612C2A00B17717 /* wristdiary WatchKit App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		81B59DCD26612C2D00B17717 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 81B59DCC26612C2D00B17717 /* Assets.xcassets */; };
@@ -106,7 +105,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				81A5C039266286FE0011BD9C /* SwiftDate in Frameworks */,
 				81B45005266512B900EB8A08 /* EFQRCode in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -233,7 +231,6 @@
 			);
 			name = wristdiary;
 			packageProductDependencies = (
-				81E28E9A2662867800CA3BD1 /* SwiftDate */,
 				81B45003266512AD00EB8A08 /* EFQRCode */,
 			);
 			productName = wristdiary;
@@ -271,7 +268,6 @@
 			);
 			name = "wristdiary WatchKit Extension";
 			packageProductDependencies = (
-				81A5C038266286FE0011BD9C /* SwiftDate */,
 				81B45004266512B900EB8A08 /* EFQRCode */,
 			);
 			productName = "wristdiary WatchKit Extension";
@@ -308,7 +304,6 @@
 			);
 			mainGroup = 81B59DBC26612C2900B17717;
 			packageReferences = (
-				81E28E992662867800CA3BD1 /* XCRemoteSwiftPackageReference "SwiftDate" */,
 				81B45002266512AD00EB8A08 /* XCRemoteSwiftPackageReference "EFQRCode" */,
 			);
 			productRefGroup = 81B59DC426612C2A00B17717 /* Products */;
@@ -675,22 +670,9 @@
 				minimumVersion = 6.1.0;
 			};
 		};
-		81E28E992662867800CA3BD1 /* XCRemoteSwiftPackageReference "SwiftDate" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/malcommac/SwiftDate.git";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 6.3.1;
-			};
-		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		81A5C038266286FE0011BD9C /* SwiftDate */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 81E28E992662867800CA3BD1 /* XCRemoteSwiftPackageReference "SwiftDate" */;
-			productName = SwiftDate;
-		};
 		81B45003266512AD00EB8A08 /* EFQRCode */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 81B45002266512AD00EB8A08 /* XCRemoteSwiftPackageReference "EFQRCode" */;
@@ -700,11 +682,6 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 81B45002266512AD00EB8A08 /* XCRemoteSwiftPackageReference "EFQRCode" */;
 			productName = EFQRCode;
-		};
-		81E28E9A2662867800CA3BD1 /* SwiftDate */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 81E28E992662867800CA3BD1 /* XCRemoteSwiftPackageReference "SwiftDate" */;
-			productName = SwiftDate;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

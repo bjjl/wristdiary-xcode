@@ -12,12 +12,16 @@ struct ListEntriesView: View {
     @ObservedObject var data = DataController.shared
     private let ioManager = IOManager()
     
+    var listForSpecificDay = false
+    
     var body: some View {
+        let entries = listForSpecificDay ? data.dayEntries : data.entries
+
         VStack {
-            if data.entries.count > 0 {
+            if entries.count > 0 {
                 ScrollView(.vertical) {
                     VStack {
-                        ForEach(data.entries) { entry in
+                        ForEach(entries) { entry in
                             Text(dateAsString(date: parseDate(stringDate: entry.timestamp)))
                             Text(decrypt(text: entry.entry, symmetricKey: DataController.shared.key))
                                 .font(.footnote)
@@ -29,7 +33,8 @@ struct ListEntriesView: View {
             } else {
                 VStack(alignment: .center) {
                     Spacer()
-                    Text("Empty diary\n\nLong press to create your first entry")
+                    Text(listForSpecificDay ? "No diary entries\nfor this day" :
+                            "Empty diary\n\nLong press to create your first entry")
                         .multilineTextAlignment(.center)
                     Spacer()
                 }
@@ -58,7 +63,7 @@ struct ListEntriesView: View {
     func dateAsString(date: Date) -> String {
         let formatter = DateFormatter()
         formatter.dateFormat = "MMM d HH:mm"
-        return formatter.string(from: date - 2.hours)
+        return formatter.string(from: date)
     }
     
     func parseDate(stringDate: String) -> Date {

@@ -23,9 +23,17 @@ struct ContentView: View {
             .navigationTitle("My Diary")
             
             NavigationView {
+                DateSelectionView()
+                    //.onAppear {
+                    //
+                    //}
+            }
+            .navigationTitle("Select Date")
+            
+            NavigationView {
                 QRCodeView(stringData: DataController.shared.user_id +
                             " " +
-                            DataController.shared.key.withUnsafeBytes {Data(Array($0)).base64EncodedString()})
+                            DataController.shared.key.withUnsafeBytes { Data(Array($0)).base64EncodedString() })
             }
             .navigationTitle("My Identity")
             

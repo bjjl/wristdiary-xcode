@@ -37,9 +37,15 @@ struct IOManager {
         }
     }
     
-    func receiveEntries(user_id: String) {
+    func receiveEntries(user_id: String, day: Int = 0, month: Int = 0) {
         
-        let queryItems = [URLQueryItem(name: "user_id", value: user_id)]
+        let receiveForSpecificDay = day > 0 && month > 0
+        
+        var queryItems = [URLQueryItem(name: "user_id", value: user_id)]
+        if receiveForSpecificDay {
+            queryItems.append(URLQueryItem(name: "day", value: String(day)))
+            queryItems.append(URLQueryItem(name: "month", value: String(month)))
+        }
         var urlComps = URLComponents(string: receiveURLString)!
         urlComps.queryItems = queryItems
         
@@ -55,7 +61,8 @@ struct IOManager {
                     return
                 }
                 if let safeData = data {
-                    self.parseJSONforReceive(resultData: safeData)
+                    self.parseJSONforReceive(resultData: safeData,
+                                             receiveForSpecificDay: receiveForSpecificDay)
                 }
             }
             task.resume()
@@ -73,12 +80,16 @@ struct IOManager {
         }
     }
     
-    func parseJSONforReceive(resultData: Data) {
+    func parseJSONforReceive(resultData: Data, receiveForSpecificDay: Bool) {
         let decoder = JSONDecoder()
         do {
             let decodedData = try decoder.decode([EntryData].self, from: resultData)
             DispatchQueue.main.async {
-                DataController.shared.entries = decodedData
+                if receiveForSpecificDay {
+                    DataController.shared.dayEntries = decodedData
+                } else {
+                    DataController.shared.entries = decodedData
+                }
             }
         } catch {
             print(error)

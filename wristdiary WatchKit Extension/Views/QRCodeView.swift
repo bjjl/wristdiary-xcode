@@ -18,17 +18,17 @@ struct QRCodeView: View {
     }
 
     var body: some View {
-        ScrollView {
-            VStack {
-                Text("\nExport for Backup\n")
-                    .multilineTextAlignment(.center)
-                    .font(.footnote)
+        //ScrollView {
+        //    VStack {
+                //Text("\nScan for Backup\n")
+                //    .multilineTextAlignment(.center)
+                //    .font(.footnote)
                 Image(uiImage: UIImage(cgImage: qrImage()))
                     .resizable()
                     .scaledToFit()
-                    .padding(5)
-            }
-        }
+                    //.padding(2)
+        //    }
+        //}
     }
     
     func qrImage() -> CGImage {

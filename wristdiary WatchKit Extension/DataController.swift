@@ -12,9 +12,10 @@ class DataController: ObservableObject {
     static var shared = DataController()
     
     @Published var entries: [EntryData] = []
+    @Published var dayEntries: [EntryData] = []
     
     var user_id = ""
-    var key = SymmetricKey(size: .bits256) // dummy - will be overridden later
+    var key = SymmetricKey(size: .bits256) // TODO: get rid of this tmp key, causing trouble!
     
     init() {
         loadData()

@@ -19,11 +19,16 @@ struct ListEntriesView: View {
         VStack {
             if entries.count > 0 {
                 ScrollView(.vertical) {
-                    VStack {
+                    VStack(alignment: .leading) {
                         ForEach(entries) { entry in
-                            Text(dateAsString(date: parseDate(stringDate: entry.timestamp)))
+                            HStack {
+                                Spacer()
+                                Text(dateAsString(date: parseDate(stringDate: entry.timestamp)))
+                                    .font(.system(size: 14))
+                                Spacer()
+                            }
                             Text(decrypt(text: entry.entry, symmetricKey: DataController.shared.key))
-                                .font(.footnote)
+                                .font(.system(size: 12))
                                 .fixedSize(horizontal: false, vertical: true)
                             Divider()
                         }

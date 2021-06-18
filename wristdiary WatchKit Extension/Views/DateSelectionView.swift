@@ -9,23 +9,13 @@ import SwiftUI
 
 struct DateSelectionView: View {
     private let ioManager = IOManager()
+    private let days = 1...31
+    private let months = 1...12
+    private let monthStrings = ["", "Jan", "Feb", "Mar", "Apr", "May",
+                                "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"]
     @State var showingEntriesView = false
-    
-    let days = 1...31
-    let months = 1...12
-    let monthStrings = ["", "Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"]
-    @State private var selectedDay: Int
-    @State private var selectedMonth: Int
-    
-    init() {
-        let today = Date().get(.day, .month)
-        self.selectedDay = today.day!
-        self.selectedMonth = today.month!
-    }
-
-    //func reset() {
-    //    self.selectedDay = 2
-    //}
+    @State private var selectedDay = Date().get(.day).day!
+    @State private var selectedMonth = Date().get(.month).month!
     
     var body: some View {
         VStack {
@@ -35,9 +25,6 @@ struct DateSelectionView: View {
                         Text(String($0))
                     }
                 }
-                //.onAppear {
-                //    self.selectedDay = 5
-                //}
                 .labelsHidden()
                 Picker("", selection: $selectedMonth) {
                     ForEach(months, id: \.self) {

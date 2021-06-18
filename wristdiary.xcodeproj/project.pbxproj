@@ -8,11 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		810857622662792C000FCF88 /* DataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 810857612662792C000FCF88 /* DataController.swift */; };
-		8180DB092664302A008D39E6 /* KeyStoreError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8180DB042664302A008D39E6 /* KeyStoreError.swift */; };
-		8180DB0A2664302A008D39E6 /* GenericPasswordStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8180DB052664302A008D39E6 /* GenericPasswordStore.swift */; };
-		8180DB0B2664302A008D39E6 /* GenericPasswordConvertible.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8180DB062664302A008D39E6 /* GenericPasswordConvertible.swift */; };
-		8180DB0C2664302A008D39E6 /* SecKeyConvertible.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8180DB072664302A008D39E6 /* SecKeyConvertible.swift */; };
-		8180DB0D2664302A008D39E6 /* SecKeyStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8180DB082664302A008D39E6 /* SecKeyStore.swift */; };
+		818D54BE267BAAE400F92D2B /* KeychainAccess in Frameworks */ = {isa = PBXBuildFile; productRef = 818D54BD267BAAE400F92D2B /* KeychainAccess */; };
 		81B45005266512B900EB8A08 /* EFQRCode in Frameworks */ = {isa = PBXBuildFile; productRef = 81B45004266512B900EB8A08 /* EFQRCode */; };
 		81B59DC826612C2A00B17717 /* wristdiary WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 81B59DC726612C2A00B17717 /* wristdiary WatchKit App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		81B59DCD26612C2D00B17717 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 81B59DCC26612C2D00B17717 /* Assets.xcassets */; };
@@ -75,11 +71,6 @@
 
 /* Begin PBXFileReference section */
 		810857612662792C000FCF88 /* DataController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataController.swift; sourceTree = "<group>"; };
-		8180DB042664302A008D39E6 /* KeyStoreError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeyStoreError.swift; sourceTree = "<group>"; };
-		8180DB052664302A008D39E6 /* GenericPasswordStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GenericPasswordStore.swift; sourceTree = "<group>"; };
-		8180DB062664302A008D39E6 /* GenericPasswordConvertible.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GenericPasswordConvertible.swift; sourceTree = "<group>"; };
-		8180DB072664302A008D39E6 /* SecKeyConvertible.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SecKeyConvertible.swift; sourceTree = "<group>"; };
-		8180DB082664302A008D39E6 /* SecKeyStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SecKeyStore.swift; sourceTree = "<group>"; };
 		81B59DC326612C2A00B17717 /* wristdiary.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = wristdiary.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		81B59DC726612C2A00B17717 /* wristdiary WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "wristdiary WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		81B59DCC26612C2D00B17717 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -105,6 +96,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				818D54BE267BAAE400F92D2B /* KeychainAccess in Frameworks */,
 				81B45005266512B900EB8A08 /* EFQRCode in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -117,18 +109,6 @@
 			children = (
 			);
 			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		8180DB032664302A008D39E6 /* Storage */ = {
-			isa = PBXGroup;
-			children = (
-				8180DB042664302A008D39E6 /* KeyStoreError.swift */,
-				8180DB052664302A008D39E6 /* GenericPasswordStore.swift */,
-				8180DB062664302A008D39E6 /* GenericPasswordConvertible.swift */,
-				8180DB072664302A008D39E6 /* SecKeyConvertible.swift */,
-				8180DB082664302A008D39E6 /* SecKeyStore.swift */,
-			);
-			path = Storage;
 			sourceTree = "<group>";
 		};
 		81A5C03A266386900011BD9C /* Views */ = {
@@ -174,7 +154,6 @@
 		81B59DD726612C2D00B17717 /* wristdiary WatchKit Extension */ = {
 			isa = PBXGroup;
 			children = (
-				8180DB032664302A008D39E6 /* Storage */,
 				81A5C03A266386900011BD9C /* Views */,
 				81B59DF42661324C00B17717 /* Net */,
 				81B59DF12661316800B17717 /* Library */,
@@ -232,6 +211,7 @@
 			name = wristdiary;
 			packageProductDependencies = (
 				81B45003266512AD00EB8A08 /* EFQRCode */,
+				818D54BC267BA64900F92D2B /* KeychainAccess */,
 			);
 			productName = wristdiary;
 			productReference = 81B59DC326612C2A00B17717 /* wristdiary.app */;
@@ -269,6 +249,7 @@
 			name = "wristdiary WatchKit Extension";
 			packageProductDependencies = (
 				81B45004266512B900EB8A08 /* EFQRCode */,
+				818D54BD267BAAE400F92D2B /* KeychainAccess */,
 			);
 			productName = "wristdiary WatchKit Extension";
 			productReference = 81B59DD326612C2D00B17717 /* wristdiary WatchKit Extension.appex */;
@@ -305,6 +286,7 @@
 			mainGroup = 81B59DBC26612C2900B17717;
 			packageReferences = (
 				81B45002266512AD00EB8A08 /* XCRemoteSwiftPackageReference "EFQRCode" */,
+				818D54BB267BA64900F92D2B /* XCRemoteSwiftPackageReference "KeychainAccess" */,
 			);
 			productRefGroup = 81B59DC426612C2A00B17717 /* Products */;
 			projectDirPath = "";
@@ -353,18 +335,13 @@
 				81D27E1D26761EE4008656A1 /* DateSelectionView.swift in Sources */,
 				81B59E0026613FE200B17717 /* ListEntriesView.swift in Sources */,
 				81B59DD926612C2D00B17717 /* ContentView.swift in Sources */,
-				8180DB0B2664302A008D39E6 /* GenericPasswordConvertible.swift in Sources */,
 				81C3E41926643EB0005A3DFA /* QRCodeView.swift in Sources */,
 				81B59DDB26612C2D00B17717 /* wristdiaryApp.swift in Sources */,
 				81B59DF62661326D00B17717 /* Communicate.swift in Sources */,
 				810857622662792C000FCF88 /* DataController.swift in Sources */,
 				81B59DDD26612C2D00B17717 /* ComplicationController.swift in Sources */,
 				81B59E022662457000B17717 /* EntryData.swift in Sources */,
-				8180DB092664302A008D39E6 /* KeyStoreError.swift in Sources */,
-				8180DB0A2664302A008D39E6 /* GenericPasswordStore.swift in Sources */,
 				81B59DF8266132E400B17717 /* StatusData.swift in Sources */,
-				8180DB0D2664302A008D39E6 /* SecKeyStore.swift in Sources */,
-				8180DB0C2664302A008D39E6 /* SecKeyConvertible.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -513,7 +490,7 @@
 					"@executable_path/Frameworks",
 					"@executable_path/../../Frameworks",
 				);
-				MARKETING_VERSION = 1.1;
+				MARKETING_VERSION = 1.2.1;
 				PRODUCT_BUNDLE_IDENTIFIER = com.pocketservices.wristdiary.watchkitapp.watchkitextension;
 				PRODUCT_NAME = "${TARGET_NAME}";
 				SDKROOT = watchos;
@@ -539,7 +516,7 @@
 					"@executable_path/Frameworks",
 					"@executable_path/../../Frameworks",
 				);
-				MARKETING_VERSION = 1.1;
+				MARKETING_VERSION = 1.2.1;
 				PRODUCT_BUNDLE_IDENTIFIER = com.pocketservices.wristdiary.watchkitapp.watchkitextension;
 				PRODUCT_NAME = "${TARGET_NAME}";
 				SDKROOT = watchos;
@@ -561,7 +538,7 @@
 				DEVELOPMENT_TEAM = K9LSAPMDRX;
 				IBSC_MODULE = wristdiary_WatchKit_Extension;
 				INFOPLIST_FILE = "wristdiary WatchKit App/Info.plist";
-				MARKETING_VERSION = 1.1;
+				MARKETING_VERSION = 1.2.1;
 				PRODUCT_BUNDLE_IDENTIFIER = com.pocketservices.wristdiary.watchkitapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = watchos;
@@ -583,7 +560,7 @@
 				DEVELOPMENT_TEAM = K9LSAPMDRX;
 				IBSC_MODULE = wristdiary_WatchKit_Extension;
 				INFOPLIST_FILE = "wristdiary WatchKit App/Info.plist";
-				MARKETING_VERSION = 1.1;
+				MARKETING_VERSION = 1.2.1;
 				PRODUCT_BUNDLE_IDENTIFIER = com.pocketservices.wristdiary.watchkitapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = watchos;
@@ -600,7 +577,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = K9LSAPMDRX;
-				MARKETING_VERSION = 1.1;
+				MARKETING_VERSION = 1.2.1;
 				PRODUCT_BUNDLE_IDENTIFIER = com.pocketservices.wristdiary;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -613,7 +590,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = K9LSAPMDRX;
-				MARKETING_VERSION = 1.1;
+				MARKETING_VERSION = 1.2.1;
 				PRODUCT_BUNDLE_IDENTIFIER = com.pocketservices.wristdiary;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -662,6 +639,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		818D54BB267BA64900F92D2B /* XCRemoteSwiftPackageReference "KeychainAccess" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/kishikawakatsumi/KeychainAccess.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.2.2;
+			};
+		};
 		81B45002266512AD00EB8A08 /* XCRemoteSwiftPackageReference "EFQRCode" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/EFPrefix/EFQRCode.git";
@@ -673,6 +658,16 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		818D54BC267BA64900F92D2B /* KeychainAccess */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 818D54BB267BA64900F92D2B /* XCRemoteSwiftPackageReference "KeychainAccess" */;
+			productName = KeychainAccess;
+		};
+		818D54BD267BAAE400F92D2B /* KeychainAccess */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 818D54BB267BA64900F92D2B /* XCRemoteSwiftPackageReference "KeychainAccess" */;
+			productName = KeychainAccess;
+		};
 		81B45003266512AD00EB8A08 /* EFQRCode */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 81B45002266512AD00EB8A08 /* XCRemoteSwiftPackageReference "EFQRCode" */;

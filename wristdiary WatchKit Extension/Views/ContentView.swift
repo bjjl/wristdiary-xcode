@@ -9,9 +9,9 @@ import SwiftUI
 
 struct ContentView: View {
     @ObservedObject var data = DataController.shared
-    private let ioManager = IOManager()
     @State var entries: [EntryData] = []
-    
+    private let ioManager = IOManager()
+
     var body: some View {
         TabView {
             NavigationView {
@@ -24,9 +24,6 @@ struct ContentView: View {
             
             NavigationView {
                 DateSelectionView()
-                    //.onAppear {
-                    //
-                    //}
             }
             .navigationTitle("Select Date")
             
@@ -36,13 +33,6 @@ struct ContentView: View {
                             DataController.shared.key.withUnsafeBytes { Data(Array($0)).base64EncodedString() })
             }
             .navigationTitle("My Identity")
-            
-            /*
-            NavigationView {
-                QRCodeView(stringData: DataController.shared.key.withUnsafeBytes {Data(Array($0)).base64EncodedString()})
-            }
-            .navigationTitle("Key")
-             */
         }
     }
 }

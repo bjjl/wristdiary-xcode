@@ -9,26 +9,20 @@ import SwiftUI
 import EFQRCode
 
 struct QRCodeView: View {
+    @State var showingIdentityEnterView = false
     @ObservedObject var data = DataController.shared
     
-    var stringData: String
+    var stringData = ""
     
-    init(stringData: String) {
-        self.stringData = stringData
-    }
-
     var body: some View {
-        //ScrollView {
-        //    VStack {
-                //Text("\nScan for Backup\n")
-                //    .multilineTextAlignment(.center)
-                //    .font(.footnote)
-                Image(uiImage: UIImage(cgImage: qrImage()))
-                    .resizable()
-                    .scaledToFit()
-                    //.padding(2)
-        //    }
-        //}
+        VStack {
+            Image(uiImage: UIImage(cgImage: qrImage()))
+                .resizable()
+                .scaledToFit()
+                .padding(.vertical, 5)
+            Text("Scan to Export")
+                .multilineTextAlignment(.center)
+        }
     }
     
     func qrImage() -> CGImage {

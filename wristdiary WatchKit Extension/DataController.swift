@@ -7,12 +7,17 @@
 
 import Foundation
 import CryptoKit
+import KeychainAccess
 
 class DataController: ObservableObject {
     static var shared = DataController()
     
     @Published var entries: [EntryData] = []
     @Published var dayEntries: [EntryData] = []
+    
+    let keychainServiceName = "com.pocketservices.wristdiary"
+    let keychainUserIdAccount = "0b94b253"
+    let keychainKeyAccount = "718d0493"
     
     var user_id = ""
     var key = SymmetricKey(size: .bits256) // TODO: get rid of this tmp key, causing trouble!
@@ -23,12 +28,9 @@ class DataController: ObservableObject {
     
     func saveData() {
         DispatchQueue.global().async {
-            UserDefaults.standard.setValue(self.user_id, forKey: "wristdiary_user_id")
-            do {
-                try GenericPasswordStore().storeKey(self.key, account: self.user_id)
-            } catch {
-                print("Could not save Symmetric Crypto Key: \(error)")
-            }
+            let keychain = Keychain(service: self.keychainServiceName).synchronizable(true)
+            keychain[self.keychainUserIdAccount] = self.user_id
+            keychain[self.keychainKeyAccount] = self.key.withUnsafeBytes { Data(Array($0)).base64EncodedString() }
         }
     }
     
@@ -43,23 +45,20 @@ class DataController: ObservableObject {
 
     func loadData() {
         DispatchQueue.global().async {
-            if let user_id = UserDefaults.standard.object(forKey: "wristdiary_user_id") as? String {
+            let keychain = Keychain(service: self.keychainServiceName).synchronizable(true)
+            if let user_id = keychain[self.keychainUserIdAccount] {
                 self.user_id = user_id
-                do {
-                    guard let key: SymmetricKey = try GenericPasswordStore().readKey(account: user_id)
-                    else {
-                        return
-                    }
-                    self.key = key
-                } catch {
-                    print("Could not read Symmetric Crypto Key: \(error)")
+                if let keyData = Data(base64Encoded: keychain[self.keychainKeyAccount]!) {
+                    let retrievedKey = SymmetricKey(data: keyData)
+                    self.key = retrievedKey
                 }
             } else {
+                print("Setting up Identity in iCloud Keychain")
                 self.user_id = UUID().uuidString
                 self.key = SymmetricKey(size: .bits256)
                 self.saveData()
             }
-            let keyString = self.key.withUnsafeBytes {Data(Array($0)).base64EncodedString()}
+            let keyString = self.key.withUnsafeBytes { Data(Array($0)).base64EncodedString() }
             print("UUID: \(self.user_id), Key: \(keyString)")
         }
     }

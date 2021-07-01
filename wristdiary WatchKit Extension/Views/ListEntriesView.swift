@@ -81,7 +81,7 @@ struct ListEntriesView: View {
     
     func dateAsString(date: Date) -> String {
         let formatter = DateFormatter()
-        formatter.dateFormat = "MMM d HH:mm"
+        formatter.dateFormat = "E d. MMM HH:mm"
         return formatter.string(from: date)
     }
     

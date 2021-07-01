@@ -11,6 +11,7 @@ struct IOManager {
     
     let sendURLString = "https://lion.mx.plus/api/send"
     let receiveURLString = "https://lion.mx.plus/api/receive"
+    let deleteURLString = "https://lion.mx.plus/api/delete"
     
     func sendEntry(user_id: String, entry: String) {
         
@@ -69,6 +70,31 @@ struct IOManager {
         }
     }
     
+    func deleteEntry(user_id: String, _id: String) {
+        
+        let queryItems = [URLQueryItem(name: "user_id", value: user_id)]
+        var urlComps = URLComponents(string: deleteURLString + "/" + _id)!
+        urlComps.queryItems = queryItems
+        
+        if let url = urlComps.url {
+            var request = URLRequest(url: url)
+            request.httpMethod = "DELETE"
+            request.setValue("application/json; charset=utf-8", forHTTPHeaderField: "Content-Type")
+            
+            let session = URLSession(configuration: .default)
+            let task = session.dataTask(with: request) { (data, response, error) in
+                if error != nil {
+                    print(error!)
+                    return
+                }
+                if let safeData = data {
+                    self.parseJSONforDelete(user_id: user_id, resultData: safeData)
+                }
+            }
+            task.resume()
+        }
+    }
+
     func parseJSONforSend(user_id: String, resultData: Data) {
         let decoder = JSONDecoder()
         do {
@@ -96,6 +122,16 @@ struct IOManager {
         }
     }
     
+    func parseJSONforDelete(user_id: String, resultData: Data) {
+        let decoder = JSONDecoder()
+        do {
+            let decodedData = try decoder.decode(StatusData.self, from: resultData)
+            print(decodedData.result)
+            receiveEntries(user_id: user_id)
+        } catch {
+            print(error)
+        }
+    }
 }
 
 extension Date {

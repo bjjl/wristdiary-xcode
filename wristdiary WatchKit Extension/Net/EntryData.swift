@@ -8,9 +8,9 @@
 import Foundation
 
 class EntryData: Decodable, ObservableObject, Identifiable {
+    let _id: String
     let user_id: String
     let entry: String
     let is_encrypted: Bool
-    //let timestamp: Int64 // let timestamp = Date().currentTimeMillis()
     let timestamp: String
 }

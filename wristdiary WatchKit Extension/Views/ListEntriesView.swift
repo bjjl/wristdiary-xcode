@@ -12,7 +12,8 @@ struct ListEntriesView: View {
     private let ioManager = IOManager()
     
     var listForSpecificDay = false
-    
+    @State var strikethrough = [String : Bool]()
+
     var body: some View {
         let entries = listForSpecificDay ? data.dayEntries : data.entries
 
@@ -29,7 +30,20 @@ struct ListEntriesView: View {
                             }
                             Text(decrypt(text: entry.entry, symmetricKey: DataController.shared.key))
                                 .font(.system(size: 12))
+                                .strikethrough(self.strikethrough[entry._id] ?? false)
                                 .fixedSize(horizontal: false, vertical: true)
+                                .onTapGesture {
+                                    if !listForSpecificDay {
+                                        presentInputController(completion: validate)
+                                    }
+                                }
+                                .onLongPressGesture {
+                                    if !listForSpecificDay {
+                                        print("Deleting \(entry._id)")
+                                        self.strikethrough[entry._id] = true
+                                        ioManager.deleteEntry(user_id: DataController.shared.user_id, _id: entry._id)
+                                    }
+                                }
                             Divider()
                         }
                     }
@@ -38,15 +52,16 @@ struct ListEntriesView: View {
                 VStack(alignment: .center) {
                     Spacer()
                     Text(listForSpecificDay ? "No diary entries\nfor this day" :
-                            "Empty diary\n\nLong press to create your first entry")
+                            "Empty diary\n\nTap to create entry, long press to delete")
                         .multilineTextAlignment(.center)
                     Spacer()
                 }
             }
         }
-        .onTapGesture {  }
-        .onLongPressGesture {
-            presentInputController(completion: validate)
+        .onTapGesture {
+            if !listForSpecificDay {
+                presentInputController(completion: validate)
+            }
         }
     }
     

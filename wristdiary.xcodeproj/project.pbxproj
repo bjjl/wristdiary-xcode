@@ -8,7 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		810857622662792C000FCF88 /* DataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 810857612662792C000FCF88 /* DataController.swift */; };
+		811559462687498D00083B20 /* ListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 811559452687498D00083B20 /* ListViewModel.swift */; };
 		818D54BE267BAAE400F92D2B /* KeychainAccess in Frameworks */ = {isa = PBXBuildFile; productRef = 818D54BD267BAAE400F92D2B /* KeychainAccess */; };
+		81A60D8D268141EC0001F9AE /* Realm in Frameworks */ = {isa = PBXBuildFile; productRef = 81A60D8C268141EC0001F9AE /* Realm */; };
+		81A60D8F268141EC0001F9AE /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 81A60D8E268141EC0001F9AE /* RealmSwift */; };
+		81AB4DC2268258D700748483 /* RealmDataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81AB4DC1268258D700748483 /* RealmDataController.swift */; };
 		81B45005266512B900EB8A08 /* EFQRCode in Frameworks */ = {isa = PBXBuildFile; productRef = 81B45004266512B900EB8A08 /* EFQRCode */; };
 		81B59DC826612C2A00B17717 /* wristdiary WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 81B59DC726612C2A00B17717 /* wristdiary WatchKit App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		81B59DCD26612C2D00B17717 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 81B59DCC26612C2D00B17717 /* Assets.xcassets */; };
@@ -23,6 +27,20 @@
 		81B59DF8266132E400B17717 /* StatusData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81B59DF7266132E400B17717 /* StatusData.swift */; };
 		81B59E0026613FE200B17717 /* ListEntriesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81B59DFF26613FE200B17717 /* ListEntriesView.swift */; };
 		81B59E022662457000B17717 /* EntryData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81B59E012662457000B17717 /* EntryData.swift */; };
+		81B7BB3B2683A9600006C776 /* EntryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81B7BB3A2683A9600006C776 /* EntryView.swift */; };
+		81B7BB3D2683AA690006C776 /* EmptyDiaryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81B7BB3C2683AA690006C776 /* EmptyDiaryView.swift */; };
+		81BF9BA52680F09200118C23 /* wristdiaryApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81BF9BA42680F09200118C23 /* wristdiaryApp.swift */; };
+		81BF9BA72680F09200118C23 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81BF9BA62680F09200118C23 /* ContentView.swift */; };
+		81BF9BA92680F09300118C23 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 81BF9BA82680F09300118C23 /* Assets.xcassets */; };
+		81BF9BAC2680F09300118C23 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 81BF9BAB2680F09300118C23 /* Preview Assets.xcassets */; };
+		81BF9BB22680F40100118C23 /* ListEntriesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81BF9BB12680F40100118C23 /* ListEntriesView.swift */; };
+		81BF9BB32680F45A00118C23 /* DataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 810857612662792C000FCF88 /* DataController.swift */; };
+		81BF9BB52680F4B800118C23 /* KeychainAccess in Frameworks */ = {isa = PBXBuildFile; productRef = 81BF9BB42680F4B800118C23 /* KeychainAccess */; };
+		81BF9BB62680F4FD00118C23 /* Communicate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81B59DF52661326D00B17717 /* Communicate.swift */; };
+		81BF9BB72680F50900118C23 /* StatusData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81B59DF7266132E400B17717 /* StatusData.swift */; };
+		81BF9BB82680F51000118C23 /* EntryData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81B59E012662457000B17717 /* EntryData.swift */; };
+		81BF9BB92680F6C800118C23 /* Crypt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81B59DF22661319700B17717 /* Crypt.swift */; };
+		81BF9BBC268129DF00118C23 /* RealmObjects.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81BF9BBB268129DF00118C23 /* RealmObjects.swift */; };
 		81C3E41926643EB0005A3DFA /* QRCodeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81C3E41826643EB0005A3DFA /* QRCodeView.swift */; };
 		81D27E1D26761EE4008656A1 /* DateSelectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81D27E1C26761EE4008656A1 /* DateSelectionView.swift */; };
 /* End PBXBuildFile section */
@@ -71,6 +89,8 @@
 
 /* Begin PBXFileReference section */
 		810857612662792C000FCF88 /* DataController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataController.swift; sourceTree = "<group>"; };
+		811559452687498D00083B20 /* ListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewModel.swift; sourceTree = "<group>"; };
+		81AB4DC1268258D700748483 /* RealmDataController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmDataController.swift; sourceTree = "<group>"; };
 		81B59DC326612C2A00B17717 /* wristdiary.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = wristdiary.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		81B59DC726612C2A00B17717 /* wristdiary WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "wristdiary WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		81B59DCC26612C2D00B17717 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -87,6 +107,16 @@
 		81B59DF7266132E400B17717 /* StatusData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatusData.swift; sourceTree = "<group>"; };
 		81B59DFF26613FE200B17717 /* ListEntriesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListEntriesView.swift; sourceTree = "<group>"; };
 		81B59E012662457000B17717 /* EntryData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntryData.swift; sourceTree = "<group>"; };
+		81B7BB3A2683A9600006C776 /* EntryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntryView.swift; sourceTree = "<group>"; };
+		81B7BB3C2683AA690006C776 /* EmptyDiaryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyDiaryView.swift; sourceTree = "<group>"; };
+		81BF9BA22680F09200118C23 /* wristdiary iPhone App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "wristdiary iPhone App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		81BF9BA42680F09200118C23 /* wristdiaryApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = wristdiaryApp.swift; sourceTree = "<group>"; };
+		81BF9BA62680F09200118C23 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		81BF9BA82680F09300118C23 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		81BF9BAB2680F09300118C23 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		81BF9BAD2680F09300118C23 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		81BF9BB12680F40100118C23 /* ListEntriesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListEntriesView.swift; sourceTree = "<group>"; };
+		81BF9BBB268129DF00118C23 /* RealmObjects.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmObjects.swift; sourceTree = "<group>"; };
 		81C3E41826643EB0005A3DFA /* QRCodeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRCodeView.swift; sourceTree = "<group>"; };
 		81D27E1C26761EE4008656A1 /* DateSelectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateSelectionView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -98,6 +128,16 @@
 			files = (
 				818D54BE267BAAE400F92D2B /* KeychainAccess in Frameworks */,
 				81B45005266512B900EB8A08 /* EFQRCode in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		81BF9B9F2680F09200118C23 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				81A60D8F268141EC0001F9AE /* RealmSwift in Frameworks */,
+				81A60D8D268141EC0001F9AE /* Realm in Frameworks */,
+				81BF9BB52680F4B800118C23 /* KeychainAccess in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -127,6 +167,7 @@
 			children = (
 				81B59DCB26612C2A00B17717 /* wristdiary WatchKit App */,
 				81B59DD726612C2D00B17717 /* wristdiary WatchKit Extension */,
+				81BF9BA32680F09200118C23 /* wristdiary iPhone App */,
 				81B59DC426612C2A00B17717 /* Products */,
 				8108576526627FC0000FCF88 /* Frameworks */,
 			);
@@ -138,6 +179,7 @@
 				81B59DC326612C2A00B17717 /* wristdiary.app */,
 				81B59DC726612C2A00B17717 /* wristdiary WatchKit App.app */,
 				81B59DD326612C2D00B17717 /* wristdiary WatchKit Extension.appex */,
+				81BF9BA22680F09200118C23 /* wristdiary iPhone App.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -191,6 +233,48 @@
 				81B59E012662457000B17717 /* EntryData.swift */,
 			);
 			path = Net;
+			sourceTree = "<group>";
+		};
+		81B7BB392683987C0006C776 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				81BF9BB12680F40100118C23 /* ListEntriesView.swift */,
+				81BF9BA62680F09200118C23 /* ContentView.swift */,
+				81B7BB3A2683A9600006C776 /* EntryView.swift */,
+				81B7BB3C2683AA690006C776 /* EmptyDiaryView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		81BF9BA32680F09200118C23 /* wristdiary iPhone App */ = {
+			isa = PBXGroup;
+			children = (
+				81B7BB392683987C0006C776 /* Views */,
+				81BF9BBA268129A100118C23 /* RealmSync */,
+				81BF9BA42680F09200118C23 /* wristdiaryApp.swift */,
+				81BF9BA82680F09300118C23 /* Assets.xcassets */,
+				81BF9BAD2680F09300118C23 /* Info.plist */,
+				81BF9BAA2680F09300118C23 /* Preview Content */,
+			);
+			path = "wristdiary iPhone App";
+			sourceTree = "<group>";
+		};
+		81BF9BAA2680F09300118C23 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				81BF9BAB2680F09300118C23 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		81BF9BBA268129A100118C23 /* RealmSync */ = {
+			isa = PBXGroup;
+			children = (
+				81BF9BBB268129DF00118C23 /* RealmObjects.swift */,
+				81AB4DC1268258D700748483 /* RealmDataController.swift */,
+				811559452687498D00083B20 /* ListViewModel.swift */,
+			);
+			path = RealmSync;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -255,6 +339,28 @@
 			productReference = 81B59DD326612C2D00B17717 /* wristdiary WatchKit Extension.appex */;
 			productType = "com.apple.product-type.watchkit2-extension";
 		};
+		81BF9BA12680F09200118C23 /* wristdiary iPhone App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 81BF9BB02680F09300118C23 /* Build configuration list for PBXNativeTarget "wristdiary iPhone App" */;
+			buildPhases = (
+				81BF9B9E2680F09200118C23 /* Sources */,
+				81BF9B9F2680F09200118C23 /* Frameworks */,
+				81BF9BA02680F09200118C23 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "wristdiary iPhone App";
+			packageProductDependencies = (
+				81BF9BB42680F4B800118C23 /* KeychainAccess */,
+				81A60D8C268141EC0001F9AE /* Realm */,
+				81A60D8E268141EC0001F9AE /* RealmSwift */,
+			);
+			productName = "wristdiary iPhone App";
+			productReference = 81BF9BA22680F09200118C23 /* wristdiary iPhone App.app */;
+			productType = "com.apple.product-type.application";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -273,6 +379,9 @@
 					81B59DD226612C2D00B17717 = {
 						CreatedOnToolsVersion = 12.5;
 					};
+					81BF9BA12680F09200118C23 = {
+						CreatedOnToolsVersion = 12.5;
+					};
 				};
 			};
 			buildConfigurationList = 81B59DC026612C2900B17717 /* Build configuration list for PBXProject "wristdiary" */;
@@ -287,6 +396,7 @@
 			packageReferences = (
 				81B45002266512AD00EB8A08 /* XCRemoteSwiftPackageReference "EFQRCode" */,
 				818D54BB267BA64900F92D2B /* XCRemoteSwiftPackageReference "KeychainAccess" */,
+				81A60D8B268141EC0001F9AE /* XCRemoteSwiftPackageReference "realm-cocoa" */,
 			);
 			productRefGroup = 81B59DC426612C2A00B17717 /* Products */;
 			projectDirPath = "";
@@ -295,6 +405,7 @@
 				81B59DC226612C2900B17717 /* wristdiary */,
 				81B59DC626612C2A00B17717 /* wristdiary WatchKit App */,
 				81B59DD226612C2D00B17717 /* wristdiary WatchKit Extension */,
+				81BF9BA12680F09200118C23 /* wristdiary iPhone App */,
 			);
 		};
 /* End PBXProject section */
@@ -324,6 +435,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		81BF9BA02680F09200118C23 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				81BF9BAC2680F09300118C23 /* Preview Assets.xcassets in Resources */,
+				81BF9BA92680F09300118C23 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -342,6 +462,26 @@
 				81B59DDD26612C2D00B17717 /* ComplicationController.swift in Sources */,
 				81B59E022662457000B17717 /* EntryData.swift in Sources */,
 				81B59DF8266132E400B17717 /* StatusData.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		81BF9B9E2680F09200118C23 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				81BF9BBC268129DF00118C23 /* RealmObjects.swift in Sources */,
+				81BF9BB92680F6C800118C23 /* Crypt.swift in Sources */,
+				81BF9BA72680F09200118C23 /* ContentView.swift in Sources */,
+				81BF9BB32680F45A00118C23 /* DataController.swift in Sources */,
+				81BF9BA52680F09200118C23 /* wristdiaryApp.swift in Sources */,
+				81BF9BB62680F4FD00118C23 /* Communicate.swift in Sources */,
+				81AB4DC2268258D700748483 /* RealmDataController.swift in Sources */,
+				81BF9BB22680F40100118C23 /* ListEntriesView.swift in Sources */,
+				81BF9BB82680F51000118C23 /* EntryData.swift in Sources */,
+				811559462687498D00083B20 /* ListViewModel.swift in Sources */,
+				81BF9BB72680F50900118C23 /* StatusData.swift in Sources */,
+				81B7BB3D2683AA690006C776 /* EmptyDiaryView.swift in Sources */,
+				81B7BB3B2683A9600006C776 /* EntryView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -490,7 +630,7 @@
 					"@executable_path/Frameworks",
 					"@executable_path/../../Frameworks",
 				);
-				MARKETING_VERSION = 1.2.1;
+				MARKETING_VERSION = 1.3.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.pocketservices.wristdiary.watchkitapp.watchkitextension;
 				PRODUCT_NAME = "${TARGET_NAME}";
 				SDKROOT = watchos;
@@ -516,7 +656,7 @@
 					"@executable_path/Frameworks",
 					"@executable_path/../../Frameworks",
 				);
-				MARKETING_VERSION = 1.2.1;
+				MARKETING_VERSION = 1.3.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.pocketservices.wristdiary.watchkitapp.watchkitextension;
 				PRODUCT_NAME = "${TARGET_NAME}";
 				SDKROOT = watchos;
@@ -538,7 +678,7 @@
 				DEVELOPMENT_TEAM = K9LSAPMDRX;
 				IBSC_MODULE = wristdiary_WatchKit_Extension;
 				INFOPLIST_FILE = "wristdiary WatchKit App/Info.plist";
-				MARKETING_VERSION = 1.2.1;
+				MARKETING_VERSION = 1.3.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.pocketservices.wristdiary.watchkitapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = watchos;
@@ -560,7 +700,7 @@
 				DEVELOPMENT_TEAM = K9LSAPMDRX;
 				IBSC_MODULE = wristdiary_WatchKit_Extension;
 				INFOPLIST_FILE = "wristdiary WatchKit App/Info.plist";
-				MARKETING_VERSION = 1.2.1;
+				MARKETING_VERSION = 1.3.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.pocketservices.wristdiary.watchkitapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = watchos;
@@ -577,7 +717,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = K9LSAPMDRX;
-				MARKETING_VERSION = 1.2.1;
+				MARKETING_VERSION = 1.3.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.pocketservices.wristdiary;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -590,10 +730,54 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = K9LSAPMDRX;
-				MARKETING_VERSION = 1.2.1;
+				MARKETING_VERSION = 1.3.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.pocketservices.wristdiary;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		81BF9BAE2680F09300118C23 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"wristdiary iPhone App/Preview Content\"";
+				DEVELOPMENT_TEAM = K9LSAPMDRX;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "wristdiary iPhone App/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.pocketservices.wristdiary.iphoneapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		81BF9BAF2680F09300118C23 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"wristdiary iPhone App/Preview Content\"";
+				DEVELOPMENT_TEAM = K9LSAPMDRX;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "wristdiary iPhone App/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.pocketservices.wristdiary.iphoneapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -636,6 +820,15 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
+		81BF9BB02680F09300118C23 /* Build configuration list for PBXNativeTarget "wristdiary iPhone App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				81BF9BAE2680F09300118C23 /* Debug */,
+				81BF9BAF2680F09300118C23 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
@@ -645,6 +838,14 @@
 			requirement = {
 				kind = upToNextMajorVersion;
 				minimumVersion = 4.2.2;
+			};
+		};
+		81A60D8B268141EC0001F9AE /* XCRemoteSwiftPackageReference "realm-cocoa" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/realm/realm-cocoa.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 10.8.0;
 			};
 		};
 		81B45002266512AD00EB8A08 /* XCRemoteSwiftPackageReference "EFQRCode" */ = {
@@ -668,6 +869,16 @@
 			package = 818D54BB267BA64900F92D2B /* XCRemoteSwiftPackageReference "KeychainAccess" */;
 			productName = KeychainAccess;
 		};
+		81A60D8C268141EC0001F9AE /* Realm */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 81A60D8B268141EC0001F9AE /* XCRemoteSwiftPackageReference "realm-cocoa" */;
+			productName = Realm;
+		};
+		81A60D8E268141EC0001F9AE /* RealmSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 81A60D8B268141EC0001F9AE /* XCRemoteSwiftPackageReference "realm-cocoa" */;
+			productName = RealmSwift;
+		};
 		81B45003266512AD00EB8A08 /* EFQRCode */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 81B45002266512AD00EB8A08 /* XCRemoteSwiftPackageReference "EFQRCode" */;
@@ -677,6 +888,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 81B45002266512AD00EB8A08 /* XCRemoteSwiftPackageReference "EFQRCode" */;
 			productName = EFQRCode;
+		};
+		81BF9BB42680F4B800118C23 /* KeychainAccess */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 818D54BB267BA64900F92D2B /* XCRemoteSwiftPackageReference "KeychainAccess" */;
+			productName = KeychainAccess;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

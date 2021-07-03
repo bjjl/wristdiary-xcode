@@ -17,7 +17,9 @@ struct ListEntriesView: View {
         NavigationView {
             List {
                 ForEach(viewModel.items) { entry in
-                    EntryView(entry: entry)
+                    if !entry.isInvalidated { // avoid crash if entry is deleted from outside
+                        EntryView(entry: entry)
+                    }
                 }.onDelete(perform: removeRows)
             }
             .navigationTitle("My Diary")

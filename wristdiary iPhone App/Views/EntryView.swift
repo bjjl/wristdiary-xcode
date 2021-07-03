@@ -29,7 +29,7 @@ struct EntryView: View {
     
     func dateAsString(date: Date) -> String {
         let formatter = DateFormatter()
-        formatter.dateFormat = "MMM d HH:mm"
+        formatter.dateFormat = "EEEE d. MMMM HH:mm"
         return formatter.string(from: date)
     }
 }

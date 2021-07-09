@@ -43,6 +43,7 @@
 		81BF9BBC268129DF00118C23 /* RealmObjects.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81BF9BBB268129DF00118C23 /* RealmObjects.swift */; };
 		81C3E41926643EB0005A3DFA /* QRCodeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81C3E41826643EB0005A3DFA /* QRCodeView.swift */; };
 		81D27E1D26761EE4008656A1 /* DateSelectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81D27E1C26761EE4008656A1 /* DateSelectionView.swift */; };
+		81DA793C26906F8A00C8161E /* DateSelectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81DA793B26906F8A00C8161E /* DateSelectionView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -119,6 +120,7 @@
 		81BF9BBB268129DF00118C23 /* RealmObjects.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmObjects.swift; sourceTree = "<group>"; };
 		81C3E41826643EB0005A3DFA /* QRCodeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRCodeView.swift; sourceTree = "<group>"; };
 		81D27E1C26761EE4008656A1 /* DateSelectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateSelectionView.swift; sourceTree = "<group>"; };
+		81DA793B26906F8A00C8161E /* DateSelectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateSelectionView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -242,6 +244,7 @@
 				81BF9BA62680F09200118C23 /* ContentView.swift */,
 				81B7BB3A2683A9600006C776 /* EntryView.swift */,
 				81B7BB3C2683AA690006C776 /* EmptyDiaryView.swift */,
+				81DA793B26906F8A00C8161E /* DateSelectionView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -477,6 +480,7 @@
 				81BF9BB62680F4FD00118C23 /* Communicate.swift in Sources */,
 				81AB4DC2268258D700748483 /* RealmDataController.swift in Sources */,
 				81BF9BB22680F40100118C23 /* ListEntriesView.swift in Sources */,
+				81DA793C26906F8A00C8161E /* DateSelectionView.swift in Sources */,
 				81BF9BB82680F51000118C23 /* EntryData.swift in Sources */,
 				811559462687498D00083B20 /* ListViewModel.swift in Sources */,
 				81BF9BB72680F50900118C23 /* StatusData.swift in Sources */,
@@ -630,7 +634,7 @@
 					"@executable_path/Frameworks",
 					"@executable_path/../../Frameworks",
 				);
-				MARKETING_VERSION = 1.3.0;
+				MARKETING_VERSION = 1.3.1;
 				PRODUCT_BUNDLE_IDENTIFIER = com.pocketservices.wristdiary.watchkitapp.watchkitextension;
 				PRODUCT_NAME = "${TARGET_NAME}";
 				SDKROOT = watchos;
@@ -656,7 +660,7 @@
 					"@executable_path/Frameworks",
 					"@executable_path/../../Frameworks",
 				);
-				MARKETING_VERSION = 1.3.0;
+				MARKETING_VERSION = 1.3.1;
 				PRODUCT_BUNDLE_IDENTIFIER = com.pocketservices.wristdiary.watchkitapp.watchkitextension;
 				PRODUCT_NAME = "${TARGET_NAME}";
 				SDKROOT = watchos;
@@ -678,7 +682,7 @@
 				DEVELOPMENT_TEAM = K9LSAPMDRX;
 				IBSC_MODULE = wristdiary_WatchKit_Extension;
 				INFOPLIST_FILE = "wristdiary WatchKit App/Info.plist";
-				MARKETING_VERSION = 1.3.0;
+				MARKETING_VERSION = 1.3.1;
 				PRODUCT_BUNDLE_IDENTIFIER = com.pocketservices.wristdiary.watchkitapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = watchos;
@@ -700,7 +704,7 @@
 				DEVELOPMENT_TEAM = K9LSAPMDRX;
 				IBSC_MODULE = wristdiary_WatchKit_Extension;
 				INFOPLIST_FILE = "wristdiary WatchKit App/Info.plist";
-				MARKETING_VERSION = 1.3.0;
+				MARKETING_VERSION = 1.3.1;
 				PRODUCT_BUNDLE_IDENTIFIER = com.pocketservices.wristdiary.watchkitapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = watchos;
@@ -717,7 +721,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = K9LSAPMDRX;
-				MARKETING_VERSION = 1.3.0;
+				MARKETING_VERSION = 1.3.1;
 				PRODUCT_BUNDLE_IDENTIFIER = com.pocketservices.wristdiary;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -730,7 +734,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = K9LSAPMDRX;
-				MARKETING_VERSION = 1.3.0;
+				MARKETING_VERSION = 1.3.1;
 				PRODUCT_BUNDLE_IDENTIFIER = com.pocketservices.wristdiary;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -752,6 +756,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MARKETING_VERSION = 1.0.1;
 				PRODUCT_BUNDLE_IDENTIFIER = com.pocketservices.wristdiary.iphoneapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -774,6 +779,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MARKETING_VERSION = 1.0.1;
 				PRODUCT_BUNDLE_IDENTIFIER = com.pocketservices.wristdiary.iphoneapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;

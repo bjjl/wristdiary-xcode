@@ -9,10 +9,17 @@ import SwiftUI
 import RealmSwift
 import Realm
 
-struct ContentView: View {
-    @StateObject var realmController = RealmDataController()
-    
+struct ContentView: View {    
     var body: some View {
-        ListEntriesView()
+        TabView {
+            ListEntriesView()
+                .tabItem {
+                    Label("Timeline", systemImage: "note.text")
+                }
+            DateSelectionView()
+                .tabItem {
+                    Label("Selected Day", systemImage: "timeline.selection")
+                }
+        }
     }
 }

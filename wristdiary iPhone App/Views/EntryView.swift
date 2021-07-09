@@ -22,7 +22,11 @@ struct EntryView: View {
                     Spacer()
                 }
                 .background(Color.gray.opacity(0.2))
-                Text(decrypt(text: entry.entry!, symmetricKey: DataController.shared.key))
+                if entry.is_encrypted.value ?? false {
+                    Text(decrypt(text: entry.entry!, symmetricKey: DataController.shared.key))
+                } else {
+                    Text(entry.entry ?? "")
+                }
             }
         }
     }

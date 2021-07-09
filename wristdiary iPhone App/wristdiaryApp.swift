@@ -9,6 +9,8 @@ import SwiftUI
 
 @main
 struct wristdiaryApp: App {
+    let dataController = DataController.shared // first thing: fetch identity
+    
     var body: some Scene {
         WindowGroup {
             ContentView()

@@ -33,6 +33,11 @@ struct ContentView: View {
                             DataController.shared.key.withUnsafeBytes { Data(Array($0)).base64EncodedString() })
             }
             .navigationTitle("My Identity")
+            
+            NavigationView {
+                LocationInfoView()
+            }
+            .navigationTitle("My Location")
         }
     }
 }

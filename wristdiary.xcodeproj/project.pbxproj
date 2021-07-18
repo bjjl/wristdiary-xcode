@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		810857622662792C000FCF88 /* DataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 810857612662792C000FCF88 /* DataController.swift */; };
 		811559462687498D00083B20 /* ListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 811559452687498D00083B20 /* ListViewModel.swift */; };
+		8130925626A42D7600BAEE13 /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8130925526A42D7600BAEE13 /* LocationManager.swift */; };
+		8130925726A42D8200BAEE13 /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8130925526A42D7600BAEE13 /* LocationManager.swift */; };
+		8130925926A42F7100BAEE13 /* LocationInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8130925826A42F7100BAEE13 /* LocationInfoView.swift */; };
 		818D54BE267BAAE400F92D2B /* KeychainAccess in Frameworks */ = {isa = PBXBuildFile; productRef = 818D54BD267BAAE400F92D2B /* KeychainAccess */; };
 		81A60D8D268141EC0001F9AE /* Realm in Frameworks */ = {isa = PBXBuildFile; productRef = 81A60D8C268141EC0001F9AE /* Realm */; };
 		81A60D8F268141EC0001F9AE /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 81A60D8E268141EC0001F9AE /* RealmSwift */; };
@@ -91,6 +94,8 @@
 /* Begin PBXFileReference section */
 		810857612662792C000FCF88 /* DataController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataController.swift; sourceTree = "<group>"; };
 		811559452687498D00083B20 /* ListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewModel.swift; sourceTree = "<group>"; };
+		8130925526A42D7600BAEE13 /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
+		8130925826A42F7100BAEE13 /* LocationInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationInfoView.swift; sourceTree = "<group>"; };
 		81AB4DC1268258D700748483 /* RealmDataController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmDataController.swift; sourceTree = "<group>"; };
 		81B59DC326612C2A00B17717 /* wristdiary.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = wristdiary.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		81B59DC726612C2A00B17717 /* wristdiary WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "wristdiary WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -160,6 +165,7 @@
 				81B59DFF26613FE200B17717 /* ListEntriesView.swift */,
 				81C3E41826643EB0005A3DFA /* QRCodeView.swift */,
 				81D27E1C26761EE4008656A1 /* DateSelectionView.swift */,
+				8130925826A42F7100BAEE13 /* LocationInfoView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -201,6 +207,7 @@
 				81A5C03A266386900011BD9C /* Views */,
 				81B59DF42661324C00B17717 /* Net */,
 				81B59DF12661316800B17717 /* Library */,
+				8130925526A42D7600BAEE13 /* LocationManager.swift */,
 				81B59DDC26612C2D00B17717 /* ComplicationController.swift */,
 				810857612662792C000FCF88 /* DataController.swift */,
 				81B59DDA26612C2D00B17717 /* wristdiaryApp.swift */,
@@ -461,7 +468,9 @@
 				81C3E41926643EB0005A3DFA /* QRCodeView.swift in Sources */,
 				81B59DDB26612C2D00B17717 /* wristdiaryApp.swift in Sources */,
 				81B59DF62661326D00B17717 /* Communicate.swift in Sources */,
+				8130925926A42F7100BAEE13 /* LocationInfoView.swift in Sources */,
 				810857622662792C000FCF88 /* DataController.swift in Sources */,
+				8130925626A42D7600BAEE13 /* LocationManager.swift in Sources */,
 				81B59DDD26612C2D00B17717 /* ComplicationController.swift in Sources */,
 				81B59E022662457000B17717 /* EntryData.swift in Sources */,
 				81B59DF8266132E400B17717 /* StatusData.swift in Sources */,
@@ -474,6 +483,7 @@
 			files = (
 				81BF9BBC268129DF00118C23 /* RealmObjects.swift in Sources */,
 				81BF9BB92680F6C800118C23 /* Crypt.swift in Sources */,
+				8130925726A42D8200BAEE13 /* LocationManager.swift in Sources */,
 				81BF9BA72680F09200118C23 /* ContentView.swift in Sources */,
 				81BF9BB32680F45A00118C23 /* DataController.swift in Sources */,
 				81BF9BA52680F09200118C23 /* wristdiaryApp.swift in Sources */,

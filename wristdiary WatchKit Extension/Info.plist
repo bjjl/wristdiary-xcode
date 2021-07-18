@@ -34,5 +34,9 @@
 	</dict>
 	<key>WKWatchOnly</key>
 	<true/>
+	<key>NSLocationAlwaysUsageDescription</key>
+	<string>Your location will be included in diary entries</string>
+	<key>NSLocationWhenInUseUsageDescription</key>
+	<string>Your location will be included in diary entries</string>
 </dict>
 </plist>

@@ -9,6 +9,8 @@ import SwiftUI
 
 struct ListEntriesView: View {
     @ObservedObject var data = DataController.shared
+    @ObservedObject var lm = LocationManager()
+
     private let ioManager = IOManager()
     
     var listForSpecificDay = false
@@ -67,7 +69,9 @@ struct ListEntriesView: View {
     
     func validate(entry: String) {
         if entry != "" {
-            let encryptedEntry = encrypt(text: entry, symmetricKey: DataController.shared.key)
+            let locationTmp = lm.placemark?.name ?? ""
+            let locationInfo = locationTmp == "" ? "" : locationTmp + ": "
+            let encryptedEntry = encrypt(text: locationInfo + entry, symmetricKey: DataController.shared.key)
             ioManager.sendEntry(user_id: DataController.shared.user_id, entry: encryptedEntry)
         } else {
             #if targetEnvironment(simulator)

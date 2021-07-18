@@ -69,7 +69,7 @@ struct ListEntriesView: View {
     
     func validate(entry: String) {
         if entry != "" {
-            let locationTmp = lm.placemark?.name ?? ""
+            let locationTmp = lm.placemark?.locality ?? ""
             let locationInfo = locationTmp == "" ? "" : locationTmp + ": "
             let encryptedEntry = encrypt(text: locationInfo + entry, symmetricKey: DataController.shared.key)
             ioManager.sendEntry(user_id: DataController.shared.user_id, entry: encryptedEntry)

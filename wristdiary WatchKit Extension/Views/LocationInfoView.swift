@@ -10,11 +10,12 @@ import SwiftUI
 struct LocationInfoView: View {
     @ObservedObject var lm = LocationManager()
 
-    var placemark: String { return("\(lm.placemark?.name ?? "Unknown")") }
+    var placemark: String { return("\(lm.placemark?.locality ?? "Unknown")") }
 
     var body: some View {
         VStack {
-            Text("Placemark\n\n\(self.placemark)")
+            Text("\(self.placemark)")
+                .font(.system(size: 24))
                 .multilineTextAlignment(.center)
         }
     }

@@ -25,12 +25,9 @@ class LocationManager: NSObject, ObservableObject {
     override init() {
         super.init()
         self.locationManager.delegate = self
-        self.locationManager.desiredAccuracy = kCLLocationAccuracyReduced
-        //kCLLocationAccuracyHundredMeters //kCLLocationAccuracyBest
+        self.locationManager.desiredAccuracy = kCLLocationAccuracyKilometer
         self.locationManager.requestWhenInUseAuthorization()
         self.locationManager.startUpdatingLocation()
-        //self.locationManager.startMonitoringSignificantLocationChanges()
-        //self.locationManager.startMonitoringVisits()
     }
     
     @Published var placemark: CLPlacemark? {

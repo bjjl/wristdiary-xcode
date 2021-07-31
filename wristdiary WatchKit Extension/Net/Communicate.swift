@@ -13,9 +13,9 @@ struct IOManager {
     let receiveURLString = "https://lion.mx.plus/api/receive"
     let deleteURLString = "https://lion.mx.plus/api/delete"
     
-    func sendEntry(user_id: String, entry: String) {
+    func sendEntry(user_id: String, entry: String, city: String) {
         
-        let json: [String: Any] = [ "user_id": user_id, "entry": entry, "is_encrypted": "true" ]
+        let json: [String: Any] = [ "user_id": user_id, "entry": entry, "city": city, "is_encrypted": "true" ]
         let jsonData = try? JSONSerialization.data(withJSONObject: json)
         
         if let url = URL(string: sendURLString) {

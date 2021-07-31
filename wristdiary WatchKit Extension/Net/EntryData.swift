@@ -11,6 +11,7 @@ class EntryData: Decodable, ObservableObject, Identifiable {
     let _id: String
     let user_id: String
     let entry: String
+    let city: String?
     let is_encrypted: Bool
     let timestamp: String
 }

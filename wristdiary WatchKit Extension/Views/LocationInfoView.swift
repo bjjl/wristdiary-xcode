@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct LocationInfoView: View {
-    @ObservedObject var lm = LocationManager()
+    @ObservedObject var lm = LocationManager.shared
 
     var placemark: String { return("\(lm.placemark?.locality ?? "Unknown")") }
 

@@ -10,6 +10,8 @@ import CoreLocation
 import Combine
 
 class LocationManager: NSObject, ObservableObject {
+    static var shared = LocationManager()
+    
     private let geocoder = CLGeocoder()
     private let locationManager = CLLocationManager()
     let objectWillChange = PassthroughSubject<Void, Never>()
@@ -25,9 +27,12 @@ class LocationManager: NSObject, ObservableObject {
     override init() {
         super.init()
         self.locationManager.delegate = self
-        self.locationManager.desiredAccuracy = kCLLocationAccuracyKilometer
+        self.locationManager.desiredAccuracy = kCLLocationAccuracyThreeKilometers
         self.locationManager.requestWhenInUseAuthorization()
-        self.locationManager.startUpdatingLocation()
+    }
+    
+    func requestLocation() {
+        self.locationManager.requestLocation()
     }
     
     @Published var placemark: CLPlacemark? {
@@ -39,6 +44,8 @@ class LocationManager: NSObject, ObservableObject {
         geocoder.reverseGeocodeLocation(location, completionHandler: { (places, error) in
             if error == nil {
                 self.placemark = places?[0]
+                print(self.placemark?.locality ?? "Unknown city")
+                print(self.placemark?.country ?? "Unknown country")
             } else {
                 self.placemark = nil
             }
@@ -55,6 +62,10 @@ extension LocationManager: CLLocationManagerDelegate {
         guard let location = locations.last else { return }
         self.location = location
         self.geocode()
+    }
+    
+    func locationManager(_ manager: CLLocationManager, didFailWithError error: Error) {
+        print(error.localizedDescription)
     }
 }
 

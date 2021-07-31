@@ -9,7 +9,7 @@ import SwiftUI
 
 struct ListEntriesView: View {
     @ObservedObject var data = DataController.shared
-    @ObservedObject var lm = LocationManager()
+    @ObservedObject var lm = LocationManager.shared
 
     private let ioManager = IOManager()
     
@@ -24,6 +24,14 @@ struct ListEntriesView: View {
                 ScrollView(.vertical) {
                     VStack(alignment: .leading) {
                         ForEach(entries) { entry in
+                            if let city = entry.city {
+                                HStack {
+                                    Spacer()
+                                    Text(city)
+                                        .font(.system(size: 11))
+                                    Spacer()
+                                }
+                            }
                             HStack {
                                 Spacer()
                                 Text(dateAsString(date: parseDate(stringDate: entry.timestamp)))
@@ -36,6 +44,7 @@ struct ListEntriesView: View {
                                 .fixedSize(horizontal: false, vertical: true)
                                 .onTapGesture {
                                     if !listForSpecificDay {
+                                        lm.requestLocation()
                                         presentInputController(completion: validate)
                                     }
                                 }
@@ -62,6 +71,7 @@ struct ListEntriesView: View {
         }
         .onTapGesture {
             if !listForSpecificDay {
+                lm.requestLocation()
                 presentInputController(completion: validate)
             }
         }
@@ -69,14 +79,12 @@ struct ListEntriesView: View {
     
     func validate(entry: String) {
         if entry != "" {
-            let locationTmp = lm.placemark?.locality ?? ""
-            let locationInfo = locationTmp == "" ? "" : locationTmp + ": "
-            let encryptedEntry = encrypt(text: locationInfo + entry, symmetricKey: DataController.shared.key)
-            ioManager.sendEntry(user_id: DataController.shared.user_id, entry: encryptedEntry)
+            let encryptedEntry = encrypt(text: entry, symmetricKey: DataController.shared.key)
+            ioManager.sendEntry(user_id: DataController.shared.user_id, entry: encryptedEntry, city: lm.placemark?.locality ?? "-")
         } else {
             #if targetEnvironment(simulator)
             let encryptedEntry = encrypt(text: "Ein kurzer statischer Gedanke, ausgeführt vom Simulator. Und fertig...", symmetricKey: DataController.shared.key)
-            ioManager.sendEntry(user_id: DataController.shared.user_id, entry: encryptedEntry)
+            ioManager.sendEntry(user_id: DataController.shared.user_id, entry: encryptedEntry, city: lm.placemark?.locality ?? "-")
             #else
             print("Empty input - not sending")
             #endif

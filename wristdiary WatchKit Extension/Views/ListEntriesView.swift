@@ -44,6 +44,7 @@ struct ListEntriesView: View {
                                 .fixedSize(horizontal: false, vertical: true)
                                 .onTapGesture {
                                     if !listForSpecificDay {
+                                        WKInterfaceDevice.current().play(.start)
                                         lm.requestLocation()
                                         presentInputController(completion: validate)
                                     }
@@ -51,6 +52,7 @@ struct ListEntriesView: View {
                                 .onLongPressGesture {
                                     if !listForSpecificDay {
                                         print("Deleting \(entry._id)")
+                                        WKInterfaceDevice.current().play(.success)
                                         self.strikethrough[entry._id] = true
                                         ioManager.deleteEntry(user_id: DataController.shared.user_id, _id: entry._id)
                                     }
@@ -71,6 +73,7 @@ struct ListEntriesView: View {
         }
         .onTapGesture {
             if !listForSpecificDay {
+                WKInterfaceDevice.current().play(.start)
                 lm.requestLocation()
                 presentInputController(completion: validate)
             }

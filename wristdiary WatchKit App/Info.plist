@@ -20,10 +20,6 @@
 	<string>$(MARKETING_VERSION)</string>
 	<key>CFBundleVersion</key>
 	<string>$(CURRENT_PROJECT_VERSION)</string>
-	<key>NSLocationAlwaysUsageDescription</key>
-	<string>Your location will be included in diary entries</string>
-	<key>NSLocationWhenInUseUsageDescription</key>
-	<string>Your location will be included in diary entries</string>
 	<key>UISupportedInterfaceOrientations</key>
 	<array>
 		<string>UIInterfaceOrientationPortrait</string>

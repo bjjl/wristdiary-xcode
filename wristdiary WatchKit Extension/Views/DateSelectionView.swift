@@ -7,6 +7,13 @@
 
 import SwiftUI
 
+class PickerModel: ObservableObject {
+    static var shared = PickerModel()
+    
+    @Published var selectedDay = Date().get(.day).day!
+    @Published var selectedMonth = Date().get(.month).month!
+}
+
 struct DateSelectionView: View {
     private let ioManager = IOManager()
     private let days = 1...31
@@ -14,19 +21,19 @@ struct DateSelectionView: View {
     private let monthStrings = ["", "Jan", "Feb", "Mar", "Apr", "May",
                                 "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"]
     @State var showingEntriesView = false
-    @State private var selectedDay = Date().get(.day).day!
-    @State private var selectedMonth = Date().get(.month).month!
+    
+    @ObservedObject var pm = PickerModel.shared
     
     var body: some View {
         VStack {
             HStack {
-                Picker("", selection: $selectedDay) {
+                Picker("", selection: $pm.selectedDay) {
                     ForEach(days, id: \.self) {
                         Text(String($0))
                     }
                 }
                 .labelsHidden()
-                Picker("", selection: $selectedMonth) {
+                Picker("", selection: $pm.selectedMonth) {
                     ForEach(months, id: \.self) {
                         Text(monthStrings[$0])
                     }
@@ -41,16 +48,10 @@ struct DateSelectionView: View {
                 ListEntriesView(listForSpecificDay: true)
                     .onAppear {
                         ioManager.receiveEntries(user_id: DataController.shared.user_id,
-                                                 day: selectedDay, month: selectedMonth)
+                                                 day: pm.selectedDay, month: pm.selectedMonth)
                     }
             }
         }
-    }
-}
-
-struct DateSelectionView_Previews: PreviewProvider {
-    static var previews: some View {
-        DateSelectionView()
     }
 }
 

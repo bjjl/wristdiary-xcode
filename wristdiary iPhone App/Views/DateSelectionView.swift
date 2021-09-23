@@ -20,6 +20,7 @@ struct DateSelectionView: View {
                 )
                 .datePickerStyle(GraphicalDatePickerStyle())
                 .navigationTitle("Select Day")
+                .navigationBarTitleDisplayMode(.inline)
                 
                 Button("Lookup Diary") {
                     showingEntriesView = true

@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 52;
+	objectVersion = 55;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -44,9 +44,17 @@
 		81BF9BB82680F51000118C23 /* EntryData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81B59E012662457000B17717 /* EntryData.swift */; };
 		81BF9BB92680F6C800118C23 /* Crypt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81B59DF22661319700B17717 /* Crypt.swift */; };
 		81BF9BBC268129DF00118C23 /* RealmObjects.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81BF9BBB268129DF00118C23 /* RealmObjects.swift */; };
+		81C13A8326BE945F0047DFF5 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 81C13A8126BE945F0047DFF5 /* InfoPlist.strings */; };
+		81C13A8626BE945F0047DFF5 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 81C13A8426BE945F0047DFF5 /* Localizable.strings */; };
 		81C3E41926643EB0005A3DFA /* QRCodeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81C3E41826643EB0005A3DFA /* QRCodeView.swift */; };
 		81D27E1D26761EE4008656A1 /* DateSelectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81D27E1C26761EE4008656A1 /* DateSelectionView.swift */; };
 		81DA793C26906F8A00C8161E /* DateSelectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81DA793B26906F8A00C8161E /* DateSelectionView.swift */; };
+		81E5599626F60D2A001CDDAC /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 81C13A8426BE945F0047DFF5 /* Localizable.strings */; };
+		81E5599726F60D2B001CDDAC /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 81C13A8426BE945F0047DFF5 /* Localizable.strings */; };
+		81E5599926F60D3F001CDDAC /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 81C13A8126BE945F0047DFF5 /* InfoPlist.strings */; };
+		81E5599A26F60D40001CDDAC /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 81C13A8126BE945F0047DFF5 /* InfoPlist.strings */; };
+		81E5599B26F60D4B001CDDAC /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 81C13A8126BE945F0047DFF5 /* InfoPlist.strings */; };
+		81E5599C26F60D57001CDDAC /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 81C13A8426BE945F0047DFF5 /* Localizable.strings */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -126,6 +134,10 @@
 		81C3E41826643EB0005A3DFA /* QRCodeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRCodeView.swift; sourceTree = "<group>"; };
 		81D27E1C26761EE4008656A1 /* DateSelectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateSelectionView.swift; sourceTree = "<group>"; };
 		81DA793B26906F8A00C8161E /* DateSelectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateSelectionView.swift; sourceTree = "<group>"; };
+		81E5599326F60C5E001CDDAC /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		81E5599426F60CB1001CDDAC /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		81E5599D26F616C8001CDDAC /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/Localizable.strings; sourceTree = "<group>"; };
+		81E5599E26F616C9001CDDAC /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -213,6 +225,8 @@
 				81B59DDA26612C2D00B17717 /* wristdiaryApp.swift */,
 				81B59DDE26612C2E00B17717 /* Assets.xcassets */,
 				81B59DE326612C2E00B17717 /* Info.plist */,
+				81C13A8426BE945F0047DFF5 /* Localizable.strings */,
+				81C13A8126BE945F0047DFF5 /* InfoPlist.strings */,
 				81B59DE026612C2E00B17717 /* Preview Content */,
 			);
 			path = "wristdiary WatchKit Extension";
@@ -395,12 +409,12 @@
 				};
 			};
 			buildConfigurationList = 81B59DC026612C2900B17717 /* Build configuration list for PBXProject "wristdiary" */;
-			compatibilityVersion = "Xcode 9.3";
+			compatibilityVersion = "Xcode 13.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
-				Base,
+				de,
 			);
 			mainGroup = 81B59DBC26612C2900B17717;
 			packageReferences = (
@@ -425,6 +439,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				81E5599626F60D2A001CDDAC /* Localizable.strings in Resources */,
+				81E5599926F60D3F001CDDAC /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -433,6 +449,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				81B59DCD26612C2D00B17717 /* Assets.xcassets in Resources */,
+				81E5599A26F60D40001CDDAC /* InfoPlist.strings in Resources */,
+				81E5599726F60D2B001CDDAC /* Localizable.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -441,6 +459,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				81B59DE226612C2E00B17717 /* Preview Assets.xcassets in Resources */,
+				81C13A8626BE945F0047DFF5 /* Localizable.strings in Resources */,
+				81C13A8326BE945F0047DFF5 /* InfoPlist.strings in Resources */,
 				81B59DDF26612C2E00B17717 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -450,7 +470,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				81BF9BAC2680F09300118C23 /* Preview Assets.xcassets in Resources */,
+				81E5599C26F60D57001CDDAC /* Localizable.strings in Resources */,
 				81BF9BA92680F09300118C23 /* Assets.xcassets in Resources */,
+				81E5599B26F60D4B001CDDAC /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -514,11 +536,33 @@
 		};
 /* End PBXTargetDependency section */
 
+/* Begin PBXVariantGroup section */
+		81C13A8126BE945F0047DFF5 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				81E5599426F60CB1001CDDAC /* en */,
+				81E5599E26F616C9001CDDAC /* de */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		81C13A8426BE945F0047DFF5 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				81E5599326F60C5E001CDDAC /* en */,
+				81E5599D26F616C8001CDDAC /* de */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
 /* Begin XCBuildConfiguration section */
 		81B59DE426612C2E00B17717 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -571,6 +615,7 @@
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
@@ -579,6 +624,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -624,6 +670,7 @@
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				VALIDATE_PRODUCT = YES;
 			};

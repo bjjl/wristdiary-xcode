@@ -1,0 +1,12 @@
+{
+  "developmentRegion" : "en",
+  "project" : "wristdiary.xcodeproj",
+  "targetLocale" : "de",
+  "toolInfo" : {
+    "toolBuildNumber" : "13A5201i",
+    "toolID" : "com.apple.dt.xcode",
+    "toolName" : "Xcode",
+    "toolVersion" : "13.0"
+  },
+  "version" : "1.0"
+}

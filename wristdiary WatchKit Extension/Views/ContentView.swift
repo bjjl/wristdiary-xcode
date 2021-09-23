@@ -14,19 +14,16 @@ struct ContentView: View {
 
     var body: some View {
         TabView {
-            NavigationView {
-                ListEntriesView()
-            }
-            .onAppear {
-                ioManager.receiveEntries(user_id: DataController.shared.user_id)
-            }
-            .navigationTitle("My Diary")
-            
-            NavigationView {
-                DateSelectionView()
-            }
-            .navigationTitle("Select Date")
-            
+            ListEntriesView()
+                .navigationTitle("My Diary")
+                .onAppear {
+                    ioManager.receiveEntries(user_id: DataController.shared.user_id)
+                }
+
+            DateSelectionView()
+                .navigationTitle("Select Date")
+
+/*
             NavigationView {
                 QRCodeView(stringData: DataController.shared.user_id +
                             " " +
@@ -38,12 +35,7 @@ struct ContentView: View {
                 LocationInfoView()
             }
             .navigationTitle("My Location")
+*/
         }
-    }
-}
-
-struct ContentView_Previews: PreviewProvider {
-    static var previews: some View {
-        ContentView()
     }
 }

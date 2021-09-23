@@ -1,0 +1,11 @@
+/* Bundle display name */
+"CFBundleDisplayName" = "Wrist Diary";
+
+/* Bundle name */
+"CFBundleName" = "wristdiary WatchKit Extension";
+
+/* Privacy - Location Always Usage Description */
+"NSLocationAlwaysUsageDescription" = "Your location will be included in diary entries";
+
+/* Privacy - Location When In Use Usage Description */
+"NSLocationWhenInUseUsageDescription" = "Your location will be included in diary entries";

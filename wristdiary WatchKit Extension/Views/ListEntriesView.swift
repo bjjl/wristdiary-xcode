@@ -44,7 +44,7 @@ struct ListEntriesView: View {
                                 .fixedSize(horizontal: false, vertical: true)
                                 .onTapGesture {
                                     if !listForSpecificDay {
-                                        WKInterfaceDevice.current().play(.start)
+//                                        WKInterfaceDevice.current().play(.start)
                                         lm.requestLocation()
                                         presentInputController(completion: validate)
                                     }
@@ -52,7 +52,7 @@ struct ListEntriesView: View {
                                 .onLongPressGesture {
                                     if !listForSpecificDay {
                                         print("Deleting \(entry._id)")
-                                        WKInterfaceDevice.current().play(.success)
+//                                        WKInterfaceDevice.current().play(.success)
                                         self.strikethrough[entry._id] = true
                                         ioManager.deleteEntry(user_id: DataController.shared.user_id, _id: entry._id)
                                     }
@@ -64,8 +64,8 @@ struct ListEntriesView: View {
             } else {
                 VStack(alignment: .center) {
                     Spacer()
-                    Text(listForSpecificDay ? "No diary entries\nfor this day" :
-                            "Empty diary\n\nTap to create entry, long press to delete")
+                    Text(listForSpecificDay ? "NoResults" : "Instructions")
+                        .font(.system(size: 12))
                         .multilineTextAlignment(.center)
                     Spacer()
                 }
@@ -73,7 +73,7 @@ struct ListEntriesView: View {
         }
         .onTapGesture {
             if !listForSpecificDay {
-                WKInterfaceDevice.current().play(.start)
+//                WKInterfaceDevice.current().play(.start)
                 lm.requestLocation()
                 presentInputController(completion: validate)
             }

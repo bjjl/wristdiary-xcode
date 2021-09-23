@@ -8,13 +8,19 @@
 import SwiftUI
 
 struct LocationInfoView: View {
-    @ObservedObject var lm = LocationManager.shared
+    var placemark: Text
 
-    var placemark: String { return("\(lm.placemark?.locality ?? "Unknown")") }
-
+    init() {
+        if let locality = LocationManager.shared.placemark?.locality {
+            placemark = Text(locality)
+        } else {
+            placemark = Text("Unknown")
+        }
+    }
+    
     var body: some View {
         VStack {
-            Text("\(self.placemark)")
+            placemark
                 .font(.system(size: 24))
                 .multilineTextAlignment(.center)
         }

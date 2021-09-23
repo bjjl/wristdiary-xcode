@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.2" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 http://docs.oasis-open.org/xliff/v1.2/os/xliff-core-1.2-strict.xsd">
+  <file original="wristdiary iPhone App/en.lproj/InfoPlist.strings" source-language="en" target-language="en" datatype="plaintext">
+    <header>
+      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="13.0" build-num="13A5201i"/>
+    </header>
+    <body>
+      <trans-unit id="CFBundleDisplayName" xml:space="preserve">
+        <source>Wrist Diary</source>
+        <target>Wrist Diary</target>
+        <note>Bundle display name</note>
+      </trans-unit>
+      <trans-unit id="CFBundleName" xml:space="preserve">
+        <source>wristdiary iPhone App</source>
+        <target>wristdiary iPhone App</target>
+        <note>Bundle name</note>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="wristdiary iPhone App/en.lproj/Localizable.strings" source-language="en" target-language="en" datatype="plaintext">
+    <header>
+      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="13.0" build-num="13A5201i"/>
+    </header>
+    <body>
+      <trans-unit id="Empty diary" xml:space="preserve">
+        <source>Empty diary</source>
+        <target>Empty diary</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Lookup Diary" xml:space="preserve">
+        <source>Lookup Diary</source>
+        <target>Lookup Diary</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Select Day" xml:space="preserve">
+        <source>Select Day</source>
+        <target>Select Day</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Selected Day" xml:space="preserve">
+        <source>Selected Day</source>
+        <target>Selected Day</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Timeline" xml:space="preserve">
+        <source>Timeline</source>
+        <target>Timeline</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="wristdiary WatchKit Extension/en.lproj/InfoPlist.strings" source-language="en" target-language="en" datatype="plaintext">
+    <header>
+      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="13.0" build-num="13A5201i"/>
+    </header>
+    <body>
+      <trans-unit id="CFBundleDisplayName" xml:space="preserve">
+        <source>Wrist Diary</source>
+        <target>Wrist Diary</target>
+        <note>Bundle display name</note>
+      </trans-unit>
+      <trans-unit id="CFBundleName" xml:space="preserve">
+        <source>wristdiary WatchKit Extension</source>
+        <target>wristdiary WatchKit Extension</target>
+        <note>Bundle name</note>
+      </trans-unit>
+      <trans-unit id="NSLocationAlwaysUsageDescription" xml:space="preserve">
+        <source>Your location will be included in diary entries</source>
+        <target>Your location will be included in diary entries</target>
+        <note>Privacy - Location Always Usage Description</note>
+      </trans-unit>
+      <trans-unit id="NSLocationWhenInUseUsageDescription" xml:space="preserve">
+        <source>Your location will be included in diary entries</source>
+        <target>Your location will be included in diary entries</target>
+        <note>Privacy - Location When In Use Usage Description</note>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="wristdiary WatchKit Extension/en.lproj/Localizable.strings" source-language="en" target-language="en" datatype="plaintext">
+    <header>
+      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="13.0" build-num="13A5201i"/>
+    </header>
+    <body>
+      <trans-unit id="Lookup Diary" xml:space="preserve">
+        <source>Lookup Diary</source>
+        <target>Lookup Diary</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="My Diary" xml:space="preserve">
+        <source>My Diary</source>
+        <target>My Diary</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="My Identity" xml:space="preserve">
+        <source>My Identity</source>
+        <target>My Identity</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="My Location" xml:space="preserve">
+        <source>My Location</source>
+        <target>My Location</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Select Date" xml:space="preserve">
+        <source>Select Date</source>
+        <target>Select Date</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Unknown" xml:space="preserve">
+        <source>Unknown</source>
+        <target>Unknown</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>
